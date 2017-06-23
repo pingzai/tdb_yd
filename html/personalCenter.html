@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+    <link rel="stylesheet" href="../css/personalCenter.css"/>
+</head>
+<body class="body01">
+<div class="min">
+    <!--个人中心-->
+    <div data-min="3" class="personalCenter">
+        <!--昵称-->
+        <div class="nickname">
+            <!--头像-->
+            <img class="headpic" src="" alt="">
+            <!--用户名-->
+            <div class="username">
+                用户昵称
+            </div>
+            <!--积分-->
+            <div class="mybreadth">
+                <p class="p01">0</p>
+                <p class="p02">我的积分</p>
+            </div>
+        </div>
+        <!--订单列表-->
+        <div class="order-list">
+            <div>
+                <a href="javascript:;" data-c="orderForm-pay" data-i="1">
+                    <img src="../img/personal01.png" alt=""/>
+                    待付款
+                </a>
+            </div>
+            <div>
+                <a href="javascript:;" data-c="orderForm-delivering" data-i="2">
+                    <img src="../img/personal02.png" alt=""/>
+                    待发货
+                </a>
+            </div>
+            <div>
+                <a href="javascript:;" data-c="orderForm-deliver" data-i="3">
+                    <img src="../img/personal03.png" alt=""/>
+                    待收货
+                </a>
+            </div>
+            <div>
+                <a href="javascript:;">
+                    <img src="../img/personal04.png" alt=""/>
+                    退款/售后
+                </a>
+            </div>
+            <div>
+                <a href="javascript:;" data-c="all" data-i="0">
+                    <img src="../img/personal05.png" alt=""/>
+                    全部订单
+                </a>
+            </div>
+        </div>
+        <!--管理列表-->
+        <ul class="personalCenter-list">
+            <li class="purse">
+                <img src="../img/personal06.png" alt="加载失败"/>
+                我的钱包
+            </li>
+            <li class="collection">
+                <img src="../img/personal07.png" alt="加载失败"/>
+                我的收藏
+            </li>
+            <li class="address">
+                <img src="../img/personal08.png" alt="加载失败"/>
+                地址管理
+            </li>
+            <li class="game">
+                <img src="../img/game01.png" alt="加载失败"/>
+                游戏福利
+            </li>
+            <li class="service">
+                <img src="../img/personal09.png" alt="加载失败"/>
+                客服信息
+            </li>
+            <li class="set">
+                <img src="../img/personal10.png" alt="加载失败"/>
+                设置
+            </li>
+            <li class="focus">
+                <img src="../img/log.jpg" alt="加载失败"/>
+                扫扫关注我
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="footer">
+    <a href="javascript:;">
+        <img src="../img/footer1.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer2.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer3.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="footer-active">
+        <img src="../img/footer04.png" alt=""/>
+    </a>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/alertBg.js"></script>
+<script src="../script/personalCenter.js"></script>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加地址</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/appendAddress.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+</head>
+<body>
+    <div class="replace-min">
+        <p>*为必填，没有的可以选填</p>
+    <label>
+        *收货人姓名
+        <input type="text" id="input01" maxlength="50"/>
+    </label>
+    <label>
+        *联系方式
+        <input type="number" id="input02" maxlength="50"/>
+    </label>
+    <label>
+        *收货地址
+        <input type="text" id="input03" maxlength="50"/>
+    </label>
+        <label class="label">
+            邮政编码
+            <input type="number" id="input04" maxlength="50"/>
+        </label>
+</div>
+    <div class="append-address">保存地址</div>
+    <div class="alertBg">
+        <div class="prompt01">
+            <p></p>
+            <div class="btn" id="alertBtn01">确定</div>
+        </div>
+        <div class="prompt02">
+            <p></p>
+            <div id="alertBtn02">取消</div>
+            <div id="alertBtn03">确定</div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/appendAddress.js"></script>
+<script src="../script/alertBg.js"></script>

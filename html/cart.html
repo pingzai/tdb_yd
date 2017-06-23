@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+    <link rel="stylesheet" href="../css/shoopingCart.css"/>
+</head>
+<body class="body01">
+<div class="min">
+    <!--购物车-->
+    <div data-min="2" class="shoopingCart">
+        <!--购物车里面的内容-->
+        <div class="content">
+            <!--<div class="cart-content" data-n="shangchengziying">
+				<div class="cart-nav">
+					<label class="label1">
+			            <input type="checkbox"/>
+			            </label>
+					<p>商 城 自 营</p>
+				</div>
+				<ul class="cart-ul">
+					<li data-id="256">
+						<input type="checkbox" class="goodsCart-state" />
+						<div class="l">
+						</div>
+						<div class="r">
+							<p class="p1">商品名称1</p>
+							<div class="classify1">
+								<span class="span1">麻辣</span>
+							</div>
+							<span class="money goods-money">￥12.00</span>
+							<del></del>
+							<div class="s3">
+								<span class="span1 num-sub">-</span>
+								<span class="span2 num-show">1</span>
+								<span class="span3 num-add">+</span>
+							</div>
+						</div>
+					</li>
+					<li data-id="256">
+						<input type="checkbox" class="goodsCart-state" />
+			
+						<div class="l">
+						</div>
+						<div class="r">
+							<p class="p1">商品名称1</p>
+							<div class="classify1">
+								<span class="span1">麻辣</span>
+							</div>
+							<span class="money goods-money">￥12.00</span>
+							<div class="s3">
+								<span class="span1 num-sub">-</span>
+								<span class="span2 num-show">1</span>
+								<span class="span3 num-add">+</span>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="cart-content" data-n="zhouheiya">
+				<div class="cart-nav">
+					<label class="label1">
+			            <input type="checkbox"/>
+			            </label>
+			
+					<p>周 黑 鸭</p>
+				</div>
+				<ul class="cart-ul">
+					<li data-id="251">
+						<input type="checkbox" class="goodsCart-state" />
+						<div class="l">
+						</div>
+						<div class="r">
+							<p class="p1">商品名称2</p>
+							<div class="classify1">
+								<span class="span1">原味</span>
+							</div>
+							<span class="money goods-money">￥20.00</span>
+							<span class="s3">
+			            <span class="span1 num-sub">-</span>
+							<span class="span2 num-show">1</span>
+							<span class="span3 num-add">+</span>
+							</span>
+						</div>
+					</li>
+					<li data-id="251">
+						<input type="checkbox" class="goodsCart-state" />
+						<div class="l">
+						</div>
+						<div class="r">
+							<p class="p1">商品名称2</p>
+							<div class="classify1">
+								<span class="span1">原味</span>
+							</div>
+							<span class="money goods-money">￥20.00</span>
+							<span class="s3">
+			            <span class="span1 num-sub">-</span>
+							<span class="span2 num-show">1</span>
+							<span class="span3 num-add">+</span>
+							</span>
+						</div>
+					</li>
+				</ul>
+			</div>-->
+        </div>
+        <!--总金额-->
+        <div class="addMoney">
+            <label class="label2">
+                <input type="checkbox"/>
+                全选
+            </label>
+            <span data-z="0">编辑</span>
+            <div class="result" data-r="0" id="goPay">
+                去结算
+            </div>
+            <div class="add">
+                <span class="sp1">总计</span>
+                <span class="sp2">￥ 0.00</span>
+            </div>
+
+        </div>
+        <div class="cartNull">
+            <div class="box01"></div>
+            <div class="box02">购物车空空如也</div>
+            <div class="box03">去逛逛</div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <a href="javascript:;">
+        <img src="../img/footer1.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer2.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="footer-active">
+        <img src="../img/footer03.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer4.png" alt=""/>
+    </a>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/alertBg.js"></script>
+<script src="../script/jisuanqi.js"></script>
+<script src="../script/shoopingCart.js"></script>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>我的积分</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/myintegral.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+</head>
+<body>
+  <div class="intergal-min">
+      <p class="p1">我的积分</p>
+      <p class="p2">104824</p>
+      <span>兑换红包</span>
+  </div>
+  <ul class="intergal-ul">
+      <li class="li1">积分消费记录</li>
+      <li>
+          <span>2016.12.30 16:29</span>
+          <span>兑换红包</span>
+          <span>-2000</span>
+      </li>
+      <li>
+          <span>2016.12.30 16:30</span>
+          <span>积分抽奖</span>
+          <span>-100</span>
+      </li>
+      <li>
+          <span>2016.12.30 16:45</span>
+          <span>交易成功</span>
+          <span>+1000</span>
+      </li>
+      <li>
+          <span>2016.12.30 16:29</span>
+          <span>兑换红包</span>
+          <span>-2000</span>
+      </li>
+      <li>
+          <span>2016.12.30 16:30</span>
+          <span>积分抽奖</span>
+          <span>-100</span>
+      </li>
+      <li>
+          <span>2016.12.30 16:45</span>
+          <span>交易成功</span>
+          <span>+1000</span>
+      </li>
+  </ul>
+<div class="exchange">
+    <div>
+        <p class="p2">100积分=￥1.00元</p>
+        <div>
+            <form action="" onsubmit="return false">
+                <input type="num" placeholder="输入兑换积分" id="input01"/>
+            </form>
+            <span class="makeTure">确认兑换</span>
+        </div>
+        <p class="p3">积分红包使用期限为兑换时算起10天内</p>
+        <div class="ts"></div>
+    </div>
+    <span class="close"></span>
+</div>
+  <div class="alertBg">
+      <div class="prompt01">
+          <p></p>
+          <div class="btn" id="alertBtn01">确定</div>
+      </div>
+      <div class="prompt02">
+          <p></p>
+          <div id="alertBtn02">取消</div>
+          <div id="alertBtn03">确定</div>
+      </div>
+  </div>
+</body>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/myintegral.js"></script>
+<script src="../script/alertBg.js"></script>
+</html>

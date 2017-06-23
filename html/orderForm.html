@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单列表</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/orderForm.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+    <link rel="stylesheet" href="../css/checkOrder.css">
+</head>
+<body>
+<div class="min">
+    <ul class="orderForm-list">
+        <li class="orderForm-active" data-state="0">全部订单</li>
+        <li data-i="1" data-state="1">待付款</li>
+        <li data-i="2" data-state="2">待发货</li>
+        <li data-i="0" data-state="3">待收货</li>
+    </ul>
+    <div class="orderForm-min">
+        <!--<div class="orderForm-deliver">-->
+        <!--<ul class="u01">-->
+        <!--<li>-->
+        <!--<div class="order-t">-->
+        <!--<span class="span1">商城自营</span>-->
+        <!--<span class="span2">已发货</span>-->
+        <!--</div>-->
+        <!--<ul class="order-m">-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥15.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥18.00</del></span>-->
+        <!--<span class="g5">x1</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥10.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥19.00</del></span>-->
+        <!--<span class="g5">x3</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥22.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥30.00</del></span>-->
+        <!--<span class="g5">x2</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="order-t">-->
+        <!--<span class="span1">周黑鸭</span>-->
+        <!--<span class="span2">已发货</span>-->
+        <!--</div>-->
+        <!--<ul class="order-m">-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥15.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥18.00</del></span>-->
+        <!--<span class="g5">x1</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥10.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥19.00</del></span>-->
+        <!--<span class="g5">x3</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div class="l">-->
+        <!--<img src="../img/shili04.jpg" alt=""/>-->
+        <!--</div>-->
+        <!--<div class="r">-->
+        <!--<span class="g1">商品标题</span>-->
+        <!--<span class="g2">￥22.00</span>-->
+        <!--<span class="g3">商品颜色分类名称</span>-->
+        <!--<span class="g4"><del>￥30.00</del></span>-->
+        <!--<span class="g5">x2</span>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="order-b">-->
+        <!--<span class="s1">共 <i></i> 件商品</span>-->
+        <!--<span class="s2">合计：￥ <i>45.00</i></span>-->
+        <!--</div>-->
+        <!--<span class="span03 orderFormDeliver_confirm">确认收货</span>-->
+        <!--<span class="span02 orderFormDeliver_findorder">查看物流</span>-->
+        <!--<span class="span01 orderFormDeliver_refund">退款</span>-->
+        <!--</div>-->
+    </div>
+</div>
+<div class="checkOrder">
+    <div class="top">
+        <p></p>
+        <span id="s01"></span>
+    </div>
+    <div class="box5">
+        <i></i>
+        <div class="l">
+            <p>订单号:</p>
+            <p>下单时间:</p>
+        </div>
+        <div class="r">
+            <p class="p7"></p>
+            <p class="p8"></p>
+        </div>
+    </div>
+    <div class="box1">
+
+        <div class="l">
+            <p>物流单号:</p>
+            <p>物流公司:</p>
+        </div>
+        <div class="r">
+            <p class="p1 trackingN"></p>
+            <p class="p2 trackingC"></p>
+        </div>
+        <span data-s="0"></span>
+        <ul class="ul2">
+            <li>
+                <span><i></i></span>
+                1
+            </li>
+            <li>
+                <span><i></i></span>
+                1
+            </li>
+        </ul>
+    </div>
+    <div class="box2">
+        <div class="bottom">
+            <div class="l">
+                <p >收件人:</p>
+                <p >地址:</p>
+            </div>
+            <div class="r">
+                <p class="p5"></p>
+                <p class="p6"></p>
+            </div>
+        </div>
+        <ul class="ul1">
+            <!--<li>-->
+            <!--<div class="l">-->
+            <!--<img src="../img/shili04.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="r">-->
+            <!--<p class="p7">商品标商品标题商品标题商品标题题</p>-->
+            <!--<p class="p8">麻辣</p>-->
+            <!--<p class="p9">￥ 15.00</p>-->
+            <!--<div class="btn">退款</div>-->
+            <!--<span class="s01">x1</span>-->
+            <!--<del>￥ 18.00</del>-->
+            <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<div class="l">-->
+            <!--<img src="../img/shili04.jpg" alt="">-->
+            <!--</div>-->
+            <!--<div class="r">-->
+            <!--<p class="p7">商品标商品标题商品标题商品标题题</p>-->
+            <!--<p class="p8">麻辣</p>-->
+            <!--<p class="p9">￥ 15.00</p>-->
+            <!--<div class="btn">退款</div>-->
+            <!--<span class="s01">x1</span>-->
+            <!--<del>￥ 18.00</del>-->
+            <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <div class="postage">邮费:
+            <span class="s01"></span>
+        </div>
+        <div class="price">合计:
+            <span class="s01"></span>
+        </div>
+        <!--<div class="btn02">付款</div>-->
+        <!--<div class="btn02">付款</div>-->
+    </div>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+</body>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="https://apps.bdimg.com/libs/jquery-lazyload/1.9.5/jquery.lazyload.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/orderForm.js"></script>
+<script src="../script/alertBg.js"></script>
+</html>

@@ -1,0 +1,181 @@
+.address-manage {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: #f1f1f1;
+    position: fixed;
+    top:0;
+    left:0;
+    cursor: default;
+    overflow: auto;
+    font-size: 0.143rem;
+}
+.address-manage>ul {
+    width: 100%;
+    margin-bottom: 0.56rem;
+}
+.address-manage>ul>li {
+    width: 100%;
+    background-color: #fff;
+    height: 1.3rem;
+    border-bottom: 1px solid #cbcbcb;
+    border-top: 1px solid #cbcbcb;
+    margin-bottom: 0.1rem;
+}
+.address-manage>ul>li>.add-t {
+    width: 100%;
+    height: 0.86rem;
+    position: relative;
+}
+.address-manage>ul>li>.add-t>p {
+    margin-top: 0.14rem;
+}
+.address-manage>ul>li>.add-t>.p1 {
+    display: inline-block;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    font-size: 0.15rem;
+}
+.address-manage>ul>li>.add-t>.p2 {
+    display: inline-block;
+    margin-left: 0.2rem;
+    font-weight: bold;
+    font-size: 0.15rem;
+    color: #000;
+@import
+}
+.address-manage>ul>li>.add-t>.p3 {
+    margin-left: 0.17rem;
+    width: 70%;
+    height: 0.36rem;
+    overflow: auto;
+}
+.address-manage>ul>li>.add-t>.p4 {
+    position: absolute;
+    top:0.35rem;
+    right:0.2rem;
+}
+.address-manage>ul>li>.add-b {
+    width: 100%;
+    height: 0.43rem;
+    border-top: 1px solid #cbcbcb;
+}
+.address-manage>ul>li>.add-b>label {
+    display: inline-block;
+    margin: 0.14rem 0.17rem;
+    cursor: pointer;
+    width: 0.65rem;
+    line-height: 0.15rem;
+    text-align: right;
+    position: relative;
+}
+.address-manage>ul>li>.add-b>label>input {
+    display: inline-block;
+    margin-left:0.17rem;
+    margin-right: 0.1rem;
+    /*opacity: 0;*/
+}
+.address-manage>ul>li>.add-b>label>input:checked i {
+    background: url("../img/addressBtn.png");
+}
+.address-manage>ul>li>.add-b>.s2 {
+    display: block;
+    float: right;
+    width: 0.5rem;
+    text-align: center;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    border: 1px solid #cbcbcb;
+    margin-top: 0.08rem;
+    margin-right: 0.1rem;
+    cursor: pointer;
+}
+.address-manage>ul>li>.add-b>.s3 {
+    display: block;
+    float: right;
+    width: 0.5rem;
+    text-align: center;
+    line-height: 0.24rem;
+    height: 0.24rem;
+    border: 1px solid #ff4f4f;
+    margin-top: 0.08rem;
+    margin-right: 0.19rem;
+    cursor: pointer;
+    background-color: #ff4f4f;
+    color: #fff;
+}
+.address-manage>.append-address {
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background-color: #ff4f4f;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.21rem;
+    cursor: pointer;
+}
+.address-manage>.replace-min {
+    width: 100%;
+    margin-top: 0.45rem;
+    border-top: 1px solid #cbcbcb;
+    border-bottom: 1px solid #cbcbcb;
+    display: none;
+}
+.address-manage>.replace-min>label {
+    display: block;
+    width: 81%;
+    height: 0.2rem;
+    margin: 10px auto;
+}
+.address-manage>.replace-min>label>input {
+    display: block;
+    float: right;
+    width: 1.9rem;
+    height: 100%;
+    font-size: 0.12rem;
+}
+.radio {
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    padding-left: 25px;
+    cursor: pointer;
+}
+.radio input {
+    position: absolute;
+    left: -9999px;
+}
+.radio i {
+    display: block;
+    position: absolute;
+    top: 0.004rem;
+    left: 0;
+    width: 0.14rem;
+    height: 0.14rem;
+    outline: 0;
+    border: 1px solid #ff4f4f;
+    border-radius: 50%;
+    transition: border-color .3s;
+    -webkit-transition: border-color .3s;
+}
+.radio input:checked+i {
+    border-color: #ff4f4f;
+}
+.radio input+i:after {
+    position: absolute;
+    content:'';
+    top: 0.027rem;
+    left: 0.026rem;
+    width: 0.085rem;
+    height: 0.085rem;
+    border-radius: 100%;
+    background-color: #ff4f4f;
+    opacity: 0;
+    transition: opacity .1s;
+    -webkit-transition: opacity .1s;
+}
+.radio input:checked+i:after {
+    opacity: 1;
+}

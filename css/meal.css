@@ -1,0 +1,693 @@
+.meal {
+    width: 100%;
+    overflow: hidden;
+}
+.meal .notice {
+    width: 100%;
+    height: 0.95rem;
+    background:url("../img/mealBg.png") no-repeat;
+    background-size: 100%;
+}
+.meal .notice .notice-right {
+    width: 100%;
+    height: 0.95rem;
+    float: right;
+    font-size: 0.123rem;
+    position: relative;
+}
+
+.meal .notice .notice-right p.p1 {
+    font-size: 0.14rem;
+    margin-top: 0.06rem;
+    margin-left: 0.12rem;
+    color: #fff;
+}
+.meal .notice .notice-right p.p2 {
+    font-size: 0.11rem;
+    margin-top: 0.06rem;
+    width: 2.4rem;
+    margin-left: 0.12rem;
+    color: #fff;
+}
+.meal .notice .notice-right > .span1 {
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    margin-left: 0.12rem;
+    color: #fff;
+    position: absolute;
+    top: 0.68rem;
+    left: 0.2rem;
+    font-size: 0.10rem;
+    cursor: pointer;
+}
+.meal .notice .notice-right > .span1>i.i002{
+    position: absolute;
+    display: block;
+    width: 0.15rem;
+    height: 0.15rem;
+    top: 0.08rem;
+    left: -0.2rem;
+    font-style: normal;
+    background: url(../img/xin.png) no-repeat;
+    background-size: 100%;
+}
+.meal .notice .notice-right > .changeCare {
+    position: absolute;
+    top:0.05rem;
+    right:0.1rem;
+    width: 0.8rem;
+    border-radius: 5px;
+    padding-right: 0.05rem;
+    height: 0.3rem;
+    background: url("../img/changeMeal.png") no-repeat;
+    background-size: 100%;
+    cursor: pointer;
+}
+.meal .notice .notice-right > .span1 > i.i001 {
+    position: absolute;
+    display: block;
+    width: 0.1rem;
+    height: 0.2rem;
+    top: 0.06rem;
+    right: 0.4rem;
+    font-style: normal;
+    background: url(../img/jt.png) no-repeat;
+    background-size: 100%;
+}
+
+.meal .list {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 0.5rem;
+}
+
+.meal .list .list-menu {
+    width: 20%;
+    float: left;
+}
+
+.meal .list .list-menu > ul {
+    width: 99%;
+    border-right: 1px solid #ccc;
+}
+
+.meal .list .list-menu > ul > li {
+    width: 99%;
+    height: 0.457rem;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    font-size: 0.114rem;
+    text-align: center;
+    line-height: 0.457rem;
+    cursor: pointer;
+}
+.meal .list .list-menu > ul > li.active{
+    background-color: #fff;
+    width: 94%;
+    border-left: 5px solid #ff4f4f;
+}
+.meal .list .list-content {
+    width: 80%;
+    float: left;
+}
+
+.meal .list .list-content > ul {
+    width: 100%;
+    overflow: hidden;
+    font-size: 13px;
+}
+
+.meal .list .list-content > ul > li.li1 {
+    width: 100%;
+    height: 0.285rem;
+    border-bottom:1px solid #ccc;
+}
+
+.meal .list .list-content > ul > li.li1 > .l {
+    width: 0.6rem;
+    height: 0.285rem;
+    float: left;
+    font-size: 0.14rem;
+    line-height: 0.285rem;
+    text-align: center;
+    border-left:1px solid #ccc;
+}
+.meal .list .list-content > ul > li.li1 > .r > div {
+    border-bottom: 1px solid #ccc;
+    height: 0.142rem;
+}
+
+.meal .list .list-content > ul > li.append-li {
+    width: 100%;
+    height: 0.857rem;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+}
+.meal .list .list-content > ul > li.append-li>.hot-l{
+    width: 33.3%;
+    height: 100%;
+    float: left;
+    cursor: pointer;
+}
+.meal .list .list-content > ul > li.append-li>.hot-l>img{
+    display: block;
+    float: left;
+    width: 80%;
+    height: 80%;
+    margin:0.076rem;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r{
+    float: right;
+    width: 66.6%;
+    height: 100%;
+    position: relative;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r>.p1{
+    font-weight: bold;
+    font-size: 0.13rem;
+    height: 0.18rem;
+    margin-top: 0.057rem;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-bottom: 0.1rem;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r>.p2{
+    font-size: 0.1rem;
+    color: #ccc;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r>.p3{
+    margin-top: 0.228rem;
+    position: absolute;
+    top:0.35rem;
+    font-size: 0.1rem;
+    left:0;
+    color: #ff4f4f;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r>span{
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 0.51rem;
+    right: 0.095rem;
+    background: url(../img/jiahao.png) no-repeat;
+    background-size: 67%;
+    cursor: pointer;
+    background-position-x: 0.05rem;
+}
+.meal .list .list-content > ul > li.append-li>.hot-r>span>i{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: aqua;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+.meal .notice-show{
+    position: fixed;
+    display: none;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    z-index: 1000;
+    border-top: 1px solid #000;
+}
+.meal .notice-show .special-offers{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border-top: 2px solid #fff;
+}
+.meal .notice-show .special-offers>p{
+    font-size: 0.19rem;
+    text-align: center;
+    color: #fff;
+    line-height: 0.514rem;
+    border-bottom: 2px solid #fff;
+    margin-bottom: 0.15rem;
+}
+.meal .notice-show .special-offers>ul>li{
+            width: 100%;
+            height: 0.4rem;
+            line-height: 0.2rem;
+            margin-top: 0.05rem;
+}
+.meal .notice-show .special-offers>ul>li>span{
+    display: block;
+    float: left;
+    font-size: 0.1rem;
+    height: 0.21rem;
+    width: 2.2rem;
+    margin-right: 0.095rem;
+    color: #fff;
+}
+.meal .notice-show .special-offers>ul>li>span.span1{
+    margin-left: 0.2rem;
+    margin-top: 0.05rem;
+    width: 0.2rem;
+}
+.meal .notice-show .special-offers>ul>li>span>img{
+    height: 100%;
+    cursor: pointer;
+}
+.meal .notice-show .meal-notice{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 0.19rem;
+    margin-top: 0.2rem;
+}
+.meal .notice-show .meal-notice p{
+    font-size: 0.19rem;
+    line-height: 0.514rem;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+    color: #fff;
+}
+.meal .notice-show .meal-notice>div{
+    color: #fff;
+    margin-top: 0.114rem;
+    font-size: 0.12rem;
+}
+.meal .notice-show .notice-hide{
+    width: 0.2rem;
+    height:0.2rem ;
+    margin: 0.32rem auto;
+    cursor: pointer;
+    background: url("../img/close.png") no-repeat;
+    background-size: 100%;
+}
+.meal .meal-details{
+    width: 100%;
+    height: 0.438rem;
+    background-color: rgba(0,0,0,.75);
+    position: fixed;
+    bottom:0.45rem;
+    left:0;
+    z-index: 2;
+}
+.meal .meal-details>.meal-l{
+    width: 0.6rem;
+    height: 0.53rem;
+    position: absolute;
+    background-color: #3d3d3d;
+    top:-0.1rem;
+    left:0.1rem;
+    cursor: pointer;
+    z-index: 1;
+}
+.meal .meal-details>.meal-l>img{
+    display: block;
+    width: 0.2rem;
+    height: 0.3rem;
+    position: absolute;
+    top: 0.1rem;
+    left: 0.2rem;
+}
+.meal .meal-details>.meal-l>span.animate1{
+-webkit-animation:pulse 1s .1s ease both;
+    -moz-animation:pulse 1s .1s ease both;}
+@-webkit-keyframes pulse{
+0%{-webkit-transform:scale(1)}
+50%{-webkit-transform:scale(2)}
+100%{-webkit-transform:scale(1)}
+}
+@-moz-keyframes pulse{
+0%{-moz-transform:scale(1)}
+50%{-moz-transform:scale(2)}
+100%{-moz-transform:scale(1)}
+
+}
+.meal .meal-details>.meal-l>.meal-num{
+    position: absolute;
+    top:0.05rem;
+    right:0.076rem;
+    color: #fff;
+    width: 0.12rem;
+    height: 0.12rem;
+    line-height: 0.12rem;
+    text-align: center;
+    background-color: #ff4f4f;
+    border-radius: 100%;
+    font-size: 0.11rem;
+}
+.meal .meal-details>.total-money{
+    height: 100%;
+    font-size: 0.18rem;
+    line-height: 0.438rem;
+    color: #fff;
+    float: right;
+    position: relative;
+    margin-right: 0.1rem;
+}
+.meal .meal-details>.total-money>.zj{
+    position: absolute;
+    display: block;
+    top:0;
+    left:-0.3rem;
+    font-size: 0.10rem;
+}
+.meal .meal-details>.payment{
+    width: 0.82rem;
+    height: 100%;
+    line-height: 0.46rem;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    background-color: #ff4f4f;
+    float: right;
+    font-size: 0.14rem;
+}
+.meal .meal-datails-catr{
+    width: 100%;
+    overflow: auto;
+    position: fixed;
+    bottom:-2rem;
+    height: 2rem;
+    background-color: #fff;
+    z-index: 1;
+}
+.meal .meal-datails-catr>div{
+    width: 100%;
+    height: 0.285rem;
+    border-top: 1px solid #787878;
+    border-bottom: 1px solid #787878;
+    font-size: 0.14rem;
+    background-color: #cbcbcb;
+}
+.meal .meal-datails-catr>div>.one{
+     display: block;
+     float: left;
+     line-height: 0.285rem;
+     height: 100%;
+     width: 0.5rem;
+     margin-left:0.1rem;
+ }
+.meal .meal-datails-catr>div>.two{
+    display: block;
+    float: right;
+    line-height: 0.285rem;
+    height: 100%;
+    width: 0.8rem;
+    font-size: 0.12rem;
+    color: #666;
+    cursor: pointer;
+}
+.meal .meal-datails-catr>div>.two>img{
+    display: block;
+    width: 0.21rem;
+    height: 0.17rem;
+    float: left;
+    margin-top: 0.055rem;
+    margin-right: 0.076rem;
+}
+.meal .meal-datails-catr>ul{
+    width: 94%;
+    margin: 0 auto;
+    overflow: hidden;
+    font-size: 0.152rem;
+
+}
+.meal .meal-datails-catr>ul>li{
+    width: 100%;
+    height: 0.438rem;
+    border-bottom: 1px solid #ccc;
+}
+.meal .meal-datails-catr>ul>li>span{
+    display: block;
+    float: left;
+    width: 24%;
+    height: 100%;
+    line-height: 0.438rem;
+    text-align: center;
+}
+.meal .meal-datails-catr>ul>li>span.s1{
+    color:#ff8541;
+}
+.meal .meal-datails-catr>ul>li>span.span1{
+    text-align: left;
+    width: 44%;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.meal .meal-datails-catr>ul>li>span.s3{
+    width: 30%;
+}
+.meal .meal-datails-catr>ul>li>span>i{
+    display: block;
+    float: left;
+    margin-left: 0.12rem;
+    margin-right: 0.12rem;
+    margin-top: 0.12rem;
+    background: url("../img/btn_delete.png") no-repeat;
+    background-size: 100%;
+    width: 0.17rem;
+    height: 0.17rem;
+    cursor: pointer;
+}
+.meal .meal-datails-catr>ul>li>.s3>span{
+    display:block;
+    float: left;
+    text-align: center;
+    width: 0.2rem;
+    height: 0.266rem;
+    line-height: 0.266rem;
+    border: 1px solid #989898;
+    cursor: pointer;
+    margin-top: 0.076rem;
+
+}
+.meal .meal-datails-catr>ul>li>.s3>span.span2{
+    width: 0.476rem;
+    cursor: default;
+}
+.meal .meal-datails-catr>ul>li>.s3>span.span1{
+    border-right: none;
+}
+.meal .meal-datails-catr>ul>li>.s3>span.span3{
+    border-left: none;
+}
+.meal .go-top{
+    position: fixed;
+    right: 0.25rem;
+    bottom: 1.3rem;
+    font-size: 0.2rem;
+    width: 0.285rem;
+    height: 0.285rem;
+    text-align: center;
+    line-height: 0.15rem;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #666;
+    color: #fff;
+    display: none;
+}
+.meal>.beginBg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 999;
+    font-size: 0.12rem;
+    /*display: none;*/
+    display: block;
+}
+.meal>.beginBg>.begin{
+    background-color: #fff;
+    width: 2.6rem;
+    height: 2.6rem;
+    margin: 0.6rem auto;
+}
+.meal>.beginBg>.begin>form>div{
+    padding-left: 0.1rem;
+    color: #6a6a6a;
+    line-height: 0.3rem;
+}
+.meal>.beginBg>.begin>form>div.b1{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #6a6a6a;
+    background-color: #ddd;
+}
+.meal>.beginBg>.begin>form>div.b2{
+    height: 0.3rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+}
+.meal>.beginBg>.begin>form>div.b2>input{
+    width: 1.5rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-left: 0.1rem;
+    border: 1px solid #ccc;
+}
+.meal>.beginBg>.begin>form>div.b2>ul{
+    width: 1.5rem;
+    height: 1.48rem;
+    background-color: #fff;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.72rem;
+    z-index: 1000;
+    border:1px solid #ccc;
+    overflow: auto;
+    display: none;
+}
+.meal>.beginBg>.begin>form>div.b2>ul>li{
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    border-bottom:1px solid #ccc;
+    cursor: pointer;
+}
+.meal>.beginBg>.begin>form>div.b3>div{
+    float: left;
+    width: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.meal>.beginBg>.begin>form>div.b3>input{
+    width: 1.37rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    margin-left: 0.1rem;
+    border: 1px solid #ccc;
+}
+.meal>.beginBg>.begin>form>div.b4>p{
+    display: block;
+    height: 0.9rem;
+    font-size: 0.11rem;
+}
+
+.meal>.beginBg>.begin>div.b5{
+   margin: 0 auto;
+    width: 90%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    background-color: #ff4f4f;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.meal>.showMealBg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 999;
+    font-size: 0.12rem;
+    display: none;
+}
+.meal>.showMealBg>.showMeal{
+    width: 2rem;
+    margin: 0.9rem auto;
+    font-size: 0.12rem;
+    background-color: #fff;
+    overflow: auto;
+}
+.meal>.showMealBg>.showMeal>img{
+    display: block;
+    width: 100%;
+    height: 2rem;
+}
+.meal>.showMealBg>.showMeal>p{
+    padding-left: 0.1rem;
+}
+.meal>.showMealBg>.showMeal>p.p002{
+    color:#959595;
+    font-size: 0.12rem;
+}
+.meal>.showMealBg>.showMeal>.meallCart{
+    margin-top: 0.2rem;
+    float: right;
+    margin-right: 0.1rem;
+    width: 0.8rem;
+    height: 0.25rem;
+    text-align: center;
+    line-height: 0.25rem;
+    background-color: #ff4f4f;
+    margin-bottom: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.meal>.showMealBg>span{
+    background: url("../img/close.png") no-repeat;
+    background-size: 100%;
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 4rem;
+    left:1.7rem;
+    cursor: pointer;
+}
+input[type=checkbox],input[type=radio]{
+    -webkit-appearance: none;
+    width: 0.14rem;
+    height: 0.14rem;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type=checkbox]:active,input[type=radio]:active {
+    border-color: #ff4f4f;
+}
+input[type=checkbox]:checked,input[type=radio]:checked {
+    background: #fff;
+}
+input[type=checkbox]:checked::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url("../img/gou.png") no-repeat;
+    background-size: 100%;
+    width:0.15rem;
+    height: 0.15rem;
+    top:-0.01rem;
+    left:-0.01rem;
+}
+input[type=checkbox]:focus {
+    outline: none;
+}
+.mealCartBg{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.75);
+    display: none;
+    cursor:pointer;
+}
+.showSuccess{
+    position: absolute;
+    top: 0.3rem;
+    left: 1.4rem;
+    border-radius: 5px;
+    text-align: center;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    color: #fff;
+    font-size: 0.18rem;
+    opacity: 0;
+}

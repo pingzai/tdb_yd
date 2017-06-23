@@ -1,0 +1,67 @@
+body,html{
+    height: 100%;
+    font-size: 0.14rem;
+}
+.classify{
+    width: 100%;
+    height: 100%;
+}
+.classify>div{
+      float: left;
+}
+.classify>div.class-l{
+    width: 20%;
+    height: 100%;
+}
+.classify>div.class-r{
+    width: 80%;
+    background-color: #e5e5e5;
+    height: 100%;
+    overflow: auto;
+}
+.classify>div.class-l>ul.first-class{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.class-r p{
+    cursor: pointer;
+}
+.classify>div.class-l>ul>li{
+    height: 0.4rem;
+    line-height: 0.4rem;
+    text-align: center;
+    width: 98%;
+    border-bottom: 1px solid #d4d4d4;
+    cursor: pointer;
+}
+.classify>div.class-l>ul>li.active{
+    border-left: 3px solid #ff4f4f;
+    background-color: #f0f0f0;
+}
+.second-class>p{
+display: block;
+    height: 0.25rem;
+    line-height: 0.25rem;
+    width: 90%;
+    margin: 0 auto;
+}
+.second-class>ul{
+    width: 96%;
+    margin: 0 auto;
+}
+.second-class>ul>li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+     margin-bottom: 0.05rem;
+}
+.second-class>ul>li>p{
+    display: block;
+    background-color: #fff;
+    width: 95%;
+    height: 0.8rem;
+    line-height: 0.8rem;
+    margin: 0 auto;
+}

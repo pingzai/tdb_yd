@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>铁道订餐</title>
+    <meta content="yes" name="apple-touch-fullscreen" />
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+    <link rel="stylesheet" href="../css/meal.css"/>
+    <link rel="stylesheet" href="../css/footer.css"/>
+</head>
+<body class="body01">
+<div class="min">
+    <!--订餐-->
+    <div data-min="1" class="meal">
+        <!--订餐公告-->
+        <div class="notice">
+            <div class="notice-right">
+                <p class="p1">铁路订餐公告</p>
+                <p class="p2">欢迎光临，请在车票日期前一日p.m 16:00前预定。目前只支持天津段线路订餐。</p>
+                <span class="span1"> <i class="i002"></i> 新用户首次下单立减20.00元(不与其他优惠同享) <i class="i001">  </i></span>
+                <div class="changeCare"></div>
+            </div>
+
+        </div>
+        <!--订餐列表-->
+        <div class="list">
+            <div class="list-menu">
+                <ul>
+                    <li class="active">热销</li>
+                    <li>盒饭</li>
+                    <li>酒水</li>
+                </ul>
+            </div>
+            <div class="list-content" id="mealAll">
+                <!--热销-->
+                <ul data-first="hot">
+                    <li class="li1">
+                        <div class="l">热销</div>
+                    </li>
+                    <li class="append-li" data-gid="1">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称1</p>
+
+                            <p class="p2">月售120</p>
+
+                            <p class="p3">￥ 15.00</p>
+                            <span class="p4"> </span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="2">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称2</p>
+
+                            <p class="p2">月售120</p>
+
+                            <p class="p3">￥ 15.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                </ul>
+                <!--盒饭-->
+                <ul data-first="bento">
+                    <li class="li1">
+                        <div class="l" >盒饭</div>
+                    </li>
+                    <li class="append-li" data-gid="3">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称3</p>
+                            <p class="p2">月售130</p>
+                            <p class="p3">￥ 13.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="4">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称4</p>
+                            <p class="p2">月售140</p>
+                            <p class="p3">￥ 14.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="5">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称5</p>
+                            <p class="p2">月售140</p>
+                            <p class="p3">￥ 14.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="6">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称6</p>
+                            <p class="p2">月售140</p>
+                            <p class="p3">￥ 14.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                </ul>
+                <!--酒水饮料-->
+                <ul data-first="drinks">
+                    <li class="li1">
+                        <div class="l">酒水</div>
+                    </li>
+                    <li class="append-li" data-gid="7">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称5</p>
+                            <p class="p2">月售145</p>
+                            <p class="p3">￥ 54.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="8">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称6</p>
+                            <p class="p2">月售145</p>
+                            <p class="p3">￥ 54.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="9">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称7</p>
+                            <p class="p2">月售145</p>
+                            <p class="p3">￥ 54.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                    <li class="append-li" data-gid="10">
+                        <div class="hot-l">
+                            <img src="../img/shili04.jpg" alt=""/>
+                        </div>
+                        <div class="hot-r">
+                            <p class="p1">食品名称8</p>
+                            <p class="p2">月售145</p>
+                            <p class="p3">￥ 54.00</p>
+                            <span class="p4"></span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--订餐公告隐藏部分-->
+        <div class="notice-show">
+            <div class="meal-notice">
+                <p>订餐公告</p>
+                <div>公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公告内容公</div>
+            </div>
+            <div class="special-offers">
+                <ul>
+                    <li>
+                      <span class="span1">
+                          <img src="../img/xin.png" alt=""/>
+                      </span>
+                        <span>新用户首次下单立减20.00元 (不与其他优惠同享)</span>
+                    </li>
+                    <li>
+                      <span class="span1">
+                          <img src="../img/man.png" alt=""/>
+                      </span>
+                        <span>满50.00立减5.00</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="notice-hide">
+            </div>
+        </div>
+        <!--订餐车显示数量去付款-->
+        <div class="meal-details">
+            <div class="meal-l" data-meal="0">
+                <img src="../img/mealCart.png" alt="">
+                <!--订餐车里面的订餐按数量-->
+                <span class="meal-num"></span>
+            </div>
+            <!--总金额-->
+            <div class="payment">
+                去付款(0)
+            </div>
+            <!--订餐车显示数量隐藏部分-->
+            <div class="total-money">
+            </div>
+            <!--去付款-->
+        </div>
+        <div class="meal-datails-catr">
+            <div>
+                    <span class="two">
+                        <img src="../img/delete.png" alt=""/>
+                        清 空
+                    </span>
+            </div>
+            <ul>
+                <!--<li class="add-li" data-classify="hot8">-->
+                <!--<span class="span1">-->
+                <!--<i class='i1'>x</i>-->
+                <!--1号套餐-->
+                <!--</span>-->
+                <!--<span class="s1">-->
+                <!--￥15.02-->
+                <!--</span>-->
+                <!--<span class="s3">-->
+                <!--<span class="span1 num-sub">-</span>-->
+                <!--<span class="span2 num-show">1</span>-->
+                <!--<span class="span3 num-add">+</span>-->
+                <!--</span>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+        <!--<span class="go-top">︿</span>-->
+        <div class="beginBg">
+            <div class="begin">
+                <form action="" onsubmit="return false">
+                    <div class="b1">查询对应车次</div>
+                    <div class="b2">
+                        <span> 火车车次</span>
+                        <input type="text" id="trainNumber">
+                        <ul>
+                            <li>G111</li>
+                            <li>G453</li>
+                            <li>G300</li>
+                            <li>G4542</li>
+                            <li>G322</li>
+                            <li>G412</li>
+                            <li>G3221</li>
+                            <li>G400</li>
+                        </ul>
+                    </div>
+                    <div class="b3">
+                        <span>乘车日期</span>
+                        <input type="date" id="trainData">
+                    </div>
+                    <div class="b4">
+                        <span>规则及注意事项: </span>
+                        <p>1212121</p>
+                    </div>
+                </form>
+
+                <div class="b5">开始预订</div>
+            </div>
+        </div>
+        <div class="showMealBg">
+            <div class="showMeal">
+                <img src="" alt="">
+                <p class="p001">套餐一号</p>
+                <p class="p002">一荤一素</p>
+                <div class="meallCart">加入购物车</div>
+            </div>
+            <span></span>
+            <div class="showSuccess">添加成功!</div>
+        </div>
+        <div class="mealCartBg"></div>
+    </div>
+</div>
+<div class="footer">
+    <a href="javascript:;" class="footer-active">
+        <img src="../img/footer1.png" alt=""/>
+    </a>
+    <a href="javascript:;" class="footer-active">
+        <img src="../img/footer02.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer3.png" alt=""/>
+    </a>
+    <a href="javascript:;">
+        <img src="../img/footer4.png" alt=""/>
+    </a>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+<div class="goTop"></div>
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/alertBg.js"></script>
+<script src="../script/goTop.js"></script>
+<script src="../script/meal.js"></script>
+

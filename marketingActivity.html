@@ -1,0 +1,122 @@
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>营销管理-活动</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link rel="stylesheet" href="css01/marketingActivity.css"/>
+    <script src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="scripts/marketingActivity.js"></script>
+</head>
+<body>
+<div class="min">
+    <div class="marketingActivity-nav">
+        <div class="nav-l">
+            <p>营销管理-活动</p>
+            <span>Marketing management</span>
+        </div>
+        <div class="nav-adminName">
+            <span>管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="min-content">
+        <div class="activity-change">
+            <div class="change-top">
+                <ul>
+                    <li>
+                        <span>活动名称名称</span>
+                        <input type="text" id="input1"/>
+                    </li>
+                    <li>
+                        <span>活动对应分类</span>
+                        <input type="text" id="input2"/>
+                    </li>
+                    <li>
+                        <span>活动状态</span>
+                        <select name="" id="s01">
+                            <option value="正常">正常</option>
+                            <option value="挂起">挂起</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="ul-r">
+                    <li>
+                        <span>活动起始时间</span>
+                        <input type="text" id="input3"/>
+                    </li>
+                    <li>
+                        <span>活动截止时间</span>
+                        <input type="text" id="input4"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="change-bottom">
+                <span>+</span>
+                <ul class="appendActivity-ul">
+                    <li class="fixed-li">
+                        <div class="box1">
+                            <span class="li1-s">优惠方式</span>
+                        </div>
+                        <div class="box2">
+                            满
+                            <input type="text"/>
+                        </div>
+                        <div class="box3">
+                            减
+                            <input type="text"/>
+                        </div>
+                        <div class="box4">
+                            状态
+                            <select name="" id="s02">
+                                <option value="正常">正常</option>
+                                <option value="挂起">挂起</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="change-btn">
+                <span class="change-return">
+                    返回
+                </span>
+                <span class="release" data-state="0">发布/保存</span>
+            </div>
+        </div>
+        <div class="marketingActivity-list">
+            <span>新增</span>
+            <div>活动名称</div>
+            <div>起始时间</div>
+            <div>截止时间</div>
+            <div>状态</div>
+        </div>
+        <ul class="activity-append">
+            <li class="append-li">
+                <span>庆新型列车上线活动</span>
+                <span>2016-12-06</span>
+                <span>2016-12-23</span>
+                <span>正常</span>
+            </li>
+            <li class="append-li">
+                <span>2016圣诞节活动</span>
+                <span>2016-12-23</span>
+                <span>2016-12-26</span>
+                <span>正常</span>
+            </li>
+            <li class="append-li">
+                <span>2016元旦节活动</span>
+                <span>2016-12-31</span>
+                <span>2017-01-01</span>
+                <span>正常</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

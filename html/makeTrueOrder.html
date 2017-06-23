@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单确认</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/makeTrueOrder.css"/>
+    <link rel="stylesheet" href="../css/appendAddress.css">
+    <link rel="stylesheet" href="../css/alertBg.css">
+</head>
+<body>
+<div class="makeTrueOrder-min">
+    <p>收货人:
+        <i id="userName"></i>
+        <i id="userPhone"></i>
+    </p>
+    <p>收货地址: <span id='userAddress'></span></p>
+    <span class="s001"></span>
+</div>
+<div class="goodsClass">
+    <!--<div class="make">-->
+        <!--<div class="top">商城自营</div>-->
+        <!--<ul class="makeTrueOrder-u">-->
+            <!--<li>-->
+                <!--<div class="l">-->
+                    <!--<img src="../img/shili04.jpg" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="r">-->
+                    <!--<span class="g1">商品标题商品标题商品标题商品标题商品标题</span>-->
+                    <!--<span class="g2">￥15.00</span>-->
+                    <!--<span class="g3">麻辣</span>-->
+                    <!--<span class="g4">x7</span>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="l">-->
+                    <!--<img src="../img/shili04.jpg" alt=""/>-->
+                <!--</div>-->
+                <!--<div class="r">-->
+                    <!--<span class="g1">商品标题商品标题商品标题商品标题商品标题</span>-->
+                    <!--<span class="g2">￥15.00</span>-->
+                    <!--<span class="g3">麻辣</span>-->
+                    <!--<span class="g4">x7</span>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<ul class="chooseWay">-->
+            <!--<li>-->
+                <!--<div class="d1">配送方式</div>-->
+                <!--<div class="d2">车上派件</div>-->
+                <!--<img src="../img/jt.png" alt="" class="ss" data-down="0">-->
+                <!--<ul class="secondChoose">-->
+                    <!--<li>快递</li>-->
+                    <!--<li>自取</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="d1">红包</div>-->
+                <!--<div class="d2">请选择红包</div>-->
+                <!--<img src="../img/jt.png" alt="" class="ss" data-down="0">-->
+                <!--<ul class="secondChoose">-->
+                    <!--<li>红包1</li>-->
+                    <!--<li>红包2</li>-->
+                    <!--<li>红包3</li>-->
+                    <!--<li>红包4</li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<div class="d1">备注</div>-->
+                <!--<input type="text">-->
+                <!--<i>选填</i>-->
+            <!--</li>-->
+        <!--</ul>-->
+    <!--</div>-->
+
+</div>
+<div class="makeTrueOrder-footer">
+    <span class="span1">优惠:</span>
+    <span class="span2">合计:</span>
+    <span class="span3">去付款</span>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+<div class="removeAddress">
+    <div class="replace-min">
+        <p>*为必填，没有的可以选填</p>
+        <label>
+            *收货人姓名
+            <input type="text" id="input01" maxlength="50"/>
+        </label>
+        <label>
+            *联系方式
+            <input type="number" id="input02" maxlength="50"/>
+        </label>
+        <label>
+            *收货地址
+            <input type="text" id="input03" maxlength="50"/>
+        </label>
+        <label class="label">
+            邮政编码
+            <input type="number" id="input04" maxlength="50"/>
+        </label>
+    </div>
+    <div class="append-address">保存并使用地址</div>
+</div>
+</body>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script src="../script/makeTrueOrder.js"></script>
+<script src="../script/alertBg.js"></script>
+</html>

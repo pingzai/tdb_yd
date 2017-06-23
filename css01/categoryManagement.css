@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 766px;
+}
+
+.min .min-right .nav {
+    width: 100%;
+    height: 76px;
+    border: 1px solid #7d7d7d;
+    border-left: none;
+}
+
+.nav .nav-memberName {
+    margin-top: -13px;
+    /*float: left;*/
+    width: 320px;
+    height: 80px;
+    padding-left: 30px;
+}
+
+.nav .nav-memberName p {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+.nav .nav-memberName span {
+    color: #ccc;
+    font-size: 18px;
+    display: block;
+}
+
+.nav .nav-search {
+    width: 600px;
+    height: 60px;
+    float: left;
+    margin-top: 20px;
+}
+
+.nav .nav-search input, .nav .nav-search span {
+    display: block;
+    float: left;
+}
+
+.nav .nav-search input {
+    width: 490px;
+    height: 34px;
+    border: 1px solid #000;
+    padding-left: 20px;
+}
+
+.nav .nav-search span {
+    width: 80px;
+    height: 36px;
+    line-height: 34px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #ccc;
+    border: 1px solid #000;
+}
+
+.nav-adminName {
+    float: right;
+    width: 182px;
+    margin-top: -66px;
+    font-size: 19px;
+    /*margin-left: 130px;*/
+}
+
+.nav .nav-adminName span {
+    display: inline-block;
+    font-size: 18px;
+    float: left;
+    margin-right: 10px;
+}
+
+.content div span {
+   float: left;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 250px;
+    height: 35px;
+    line-height:35px;
+}
+
+/*#list > div > div {*/
+    /*width: 200px;*/
+    /*text-align: center;*/
+    /*display: inline-block;*/
+/*}*/
+.one{
+    margin-left: 59px;
+}
+.two{
+    margin-left: -10px;
+}
+.three{
+    margin-left: 4px;
+}
+.four{
+    margin-left: -33px;
+}
+/*.one{*/
+/*margin-left: 150px;*/
+/*display: inline-block;*/
+/*width: 200px !important;*/
+/*}*/
+/*.two{*/
+/*margin-left: 33px;*/
+/*display: inline-block;*/
+/*width: 92px !important;*/
+/*}*/
+/*.three{*/
+/*display: inline-block;*/
+/*margin-left: 173px;*/
+/*width: 150px !important;*/
+/*}*/
+/*.four{*/
+/*display: inline-block;*/
+/*margin-left: 60px;*/
+/*width: 80px !important;*/
+/*}*/
+.content span.app {
+    cursor: pointer;
+    background: #e3515f;
+    margin-left: 50px !important;
+    border-radius: 8px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 124px;
+}
+
+.content ul {
+    width: 100%;
+}
+
+.content span img {
+    position: absolute;
+    top: -23px;
+    left: -8px;
+    width: 20px;
+    height: 20px;
+    margin-top: 14px;
+}
+
+.content ul li {
+    border-bottom: 1px solid #ccc;
+}
+
+.content ul li span {
+    width: 236px;
+    line-height: 45px;
+}
+
+.content ul li span > div {
+    width: 34px;
+    height: 20px;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    /*margin-left: -16px;*/
+    margin-top: -9px;
+    overflow: hidden;
+    /*background-color: red;*/
+}
+
+.content ul li span > div > span {
+    cursor: pointer;
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    line-height: 18px;
+    top: -4px;
+    left: 0;
+}
+
+.content ul li span > div > span.holdUp {
+    left: 32px;
+}
+
+.content ul li .btn {
+    margin: 9px !important;
+    cursor: pointer;
+    background: #e3515f;
+    margin-left: 50px !important;
+    border-radius: 8px;
+    line-height: 35px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 124px;
+    display: none;
+}
+
+.add {
+    cursor: pointer;
+}
+
+#list input {
+    border-radius: 8px;
+    border: 1px solid #e6e6e6;
+    width: 98%;
+    height: 32px;
+    line-height: 32px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.content {
+    max-height: 700px;
+    overflow: auto;
+}
+
+.content li span {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    width: 236px;
+}
+
+.del {
+    cursor: pointer;
+    width: 50px !important;
+}
+
+.mb {
+    width: 100%;
+    height: 1500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+}
+
+.classInput {
+    width: 18.5% !important;
+}
+
+.updateName {
+    cursor: pointer;
+}
+

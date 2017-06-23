@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 766px;
+}
+ul li{
+    list-style-type: none;
+}
+.top {
+    height: 10%;
+    border-bottom: 1px solid #979797;
+}
+.list-min{
+    height: 630px;
+    max-height: 630px;
+    overflow: auto;
+}
+.titleBox {
+    /*width: 500px;*/
+    padding-top: 20px;
+    float: left;
+}
+
+.titleBox p {
+    font-size: 18px;
+    color: #999;
+    margin-left: 42px;
+    margin-bottom: 2px;
+}
+.list-ul:nth-child(even) {
+    background: #f6f8fa;
+}
+.titleBox h3 {
+    font-size: 19px;
+    color: #333;
+    margin-left:42px;
+}
+.search {
+   padding-top: 10px;
+    width: 600px;
+    margin-left: 291px;
+    height: 77.5px;
+}
+
+.partOne {
+    padding-top: 10px;
+}
+
+.partOne input[type=text] {
+    border: 1px solid #979797;
+    width: 460px;
+    height: 33px;
+    line-height: 33px;
+    padding-left: 12px;
+    font-size: 18px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.find {
+    margin-left: -1px;
+    border: 1px solid #979797;
+    height: 37px;
+    text-align: center;
+    width: 80px;
+    font-size: 17px;
+    border-left: 1px solid #333;
+    cursor: pointer;
+    background: #f47b7b;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #FFFFFF;
+}
+.userMsgBox {
+    margin-top: -88px;
+    float: right;
+    margin-right: 20px;
+}
+
+.userMsgBox span {
+    display: inline-block;
+    line-height: 80px;
+    margin-right: 30px;
+    cursor: pointer;
+    color: #333333;
+    font-size: 18px;
+}
+.userMsgBox input{
+    border: none;
+}
+.list{
+    height: 590px;
+    /*overflow: auto;*/
+    width: 96%;
+    margin-left: 30px;
+}
+.list table{
+    width: 100%;
+    text-align: center;
+}
+.list table thead th{
+    font-weight: normal;
+}
+.list tr{
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.addSeller{
+    margin-top: -5px !important;
+    display: inline-block;
+    width: 128px;
+    height: 35px;
+    line-height: 35px;
+    background: #e3515f;
+    border-radius: 8px;
+    color: #FFFFFF;
+    cursor: pointer;
+    text-align: center;
+    margin-left: -42px;
+}
+.click{
+    background: #e6e6e6;
+}
+.inf-list {
+    width: 100%;
+    height: 55px;
+}
+
+.inf-list .ul1 {
+    margin: 0 20px;
+    height: 100%;
+    border-bottom: 1px solid #7d7d7d;
+    /*height: 55px;*/
+    /*line-height: 55px;*/
+}
+
+.inf-list .ul1 li {
+    margin-top: 5px;
+    width: 15%;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.inf-list .list-ul {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.inf-list .list-ul {
+    zoom: 1;
+    cursor: pointer;
+}
+
+.inf-list .list-ul:after {
+    clear: both;
+    content: '.';
+    display: block;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.inf-list .list-ul li {
+    width: 15%;
+    text-align: center;
+    height: 35px;
+    line-height: 35px;
+    float: left;
+}
+.inf-list ul.active {
+    background-color: #f1f1f1;
+}
+
+.inf-list .list-ul li.li1 {
+    position: relative;
+}
+
+.inf-list .list-ul .li1 div {
+    width: 38px;
+    height: 20px;
+    position: absolute;
+    left:50%;
+    top:50%;
+    margin-left: -35px;
+    margin-top: -9px;
+    overflow: hidden;
+}
+
+.inf-list .list-ul li span {
+    cursor: pointer;
+    position: absolute;
+    width: 38px;
+    height: 18px;
+    top:-8px;
+    left:0;
+}
+.inf-list .list-ul li .holdUp {
+    left:38px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>营销管理-红包</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link rel="stylesheet" href="css01/marketingPacke.css"/>
+    <script src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="scripts/marketingPacke.js"></script>
+</head>
+<body>
+<div class="min">
+    <div class="marketingPacke-nav">
+        <div class="nav-l">
+            <p>营销管理-红包</p>
+            <span>Marketing management</span>
+        </div>
+        <div class="nav-adminName">
+            <span>管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="min-content">
+        <div class="packe-change">
+            <div class="change-top">
+                <ul>
+                    <li>
+                        <span>红包名称</span>
+                        <input type="text" id="input1"/>
+                    </li>
+                    <li>
+                        <span>红包类型</span>
+                        <input type="text" id="input2"/>
+                    </li>
+                    <li>
+                        <span>红包状态</span>
+                        <select name="packe" id="select01">
+                            <option value="正常">正常</option>
+                            <option value="挂起">挂起</option>
+                        </select>
+                    </li>
+                </ul>
+                <ul class="ul-r">
+                    <li>
+                        <span>起始发放时间</span>
+                        <input type="text" id="input3"/>
+                    </li>
+                    <li>
+                        <span>截止发放时间</span>
+                        <input type="text" id="input4"/>
+                    </li>
+                    <li>
+                        <span>截止使用时间</span>
+                        <input type="text" id="input5"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="change-bottom">
+                <span>+</span>
+                <ul class="appendMoney-ul">
+                    <li class="fixed-li">
+                        <div class="box1">
+                            <span class="li1-s">红包金额</span>
+                            <input type="text"/>
+                        </div>
+                        <div class="box2">
+                            总数量
+                            <input type="text"/>
+                        </div>
+                        <div class="box3">
+                            剩余数量
+                            <input type="text"/>
+                        </div>
+                        <div class="box4">
+                            状态
+                            <select name="" id="select02">
+                                <option value="正常">正常</option>
+                                <option value="挂起">挂起</option>
+                            </select>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="change-btn">
+                <span class="change-return">
+                    返回
+                </span>
+                <span class="release" data-state="0">发布/保存</span>
+            </div>
+        </div>
+        <div class="marketingPacke-list">
+            <span>新增</span>
+            <div>红包名称</div>
+            <div>类型</div>
+            <div>截止时间</div>
+            <div>剩余数量</div>
+            <div>状态</div>
+        </div>
+        <ul class="packe-append">
+            <li class="append-li">
+                <span>店庆一周年红包</span>
+                <span>天降红包</span>
+                <span>2016-12-23</span>
+                <span>13</span>
+                <span>正常</span>
+            </li>
+            <li class="append-li">
+                <span>2016圣诞节红包</span>
+                <span>天降红包</span>
+                <span>2016-12-26</span>
+                <span>999</span>
+                <span>正常</span>
+            </li>
+            <li class="append-li">
+                <span>新用户红包3</span>
+                <span>新用户红包</span>
+                <span>N/A</span>
+                <span>N/A</span>
+                <span>正常</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

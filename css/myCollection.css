@@ -1,0 +1,150 @@
+body{
+    background-color: #f3f3f3;
+}
+.collection-list{
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 1000;
+    background-color: #f1f1f1;
+    margin-top: 0.1rem;
+}
+.collection-list>.collection-nav>span.span1{
+    position: absolute;
+    font-size: 0.14rem;
+    color: #f0f0f0;
+    top: 0.1rem;
+    left: 0.13rem;
+    cursor: pointer;
+}
+.collection-list>.collection-nav>span.span2{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top:0.1rem;
+    right: 0.5rem;
+    font-size: 0.152rem;
+    color: #fff;
+}
+#collectionList{
+    width: 100%;
+    background-color: #fff;
+}
+#collectionList>p{
+    text-align: center;
+    color: #ccc;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    display: none;
+    background-color: #f3f3f3;
+}
+#collectionList li{
+    width: 100%;
+    height: 0.9rem;
+    cursor: pointer;
+    border-bottom: 1px solid #eaeaea;
+}
+#collectionList li>input{
+    float: left;
+    margin-top: 0.38rem;
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+}
+#collectionList li>.l{
+    width: 0.9rem;
+    height: 100%;
+    float: left;
+}
+#collectionList li>.l>img{
+    width: 0.81rem;
+    height: 0.76rem;
+    margin: 0.07rem auto;
+    float: left;
+}
+#collectionList li>.r{
+    height: 100%;
+    float: left;
+    width: 2.3rem;
+
+}
+#collectionList li>.r>.p1{
+    display: block;
+    height: 42%;
+    font-size: 0.16rem;
+    overflow: hidden;
+    line-height: 0.18rem;
+    margin-top: 0.12rem;
+}
+#collectionList li>.r>span{
+    display: block;
+    font-weight: bold;
+    font-size: 0.14rem;
+    margin-top: 0.1rem;
+    color: #ff4f4f;
+}
+#collectionList>.removeAll{
+    width: 100%;
+    height: 0.43rem;
+    background-color: #727272;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    color: #fff;
+}
+#collectionList>.removeAll>label{
+    font-size: 0.134rem;
+    display: block;
+    float: left;
+    margin-top: 0.15rem;
+    margin-left: 0.14rem;
+}
+#collectionList>.removeAll>span{
+    display: block;
+    width: 0.82rem;
+    height: 100%;
+    line-height: 0.43rem;
+    text-align: center;
+    font-size: 0.13rem;
+    float: right;
+    background-color: #ff4f4f;
+    cursor: pointer;
+}
+input[type=checkbox],input[type=radio]{
+    -webkit-appearance: none;
+    width: 0.15rem;
+    height: 0.15rem;
+    margin: 0;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #ff4f4f;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius:100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type=checkbox]:active,input[type=radio]:active {
+    border-color: #ff4f4f;
+}
+input[type=checkbox]:checked,input[type=radio]:checked {
+    background: #fff;
+}
+input[type=checkbox]:checked::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url("../img/gou.png") no-repeat;
+    background-size: 100%;
+    width:0.14rem;
+    height: 0.14rem;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+    border-color: #ff4f4f;
+}

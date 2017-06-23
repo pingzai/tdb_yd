@@ -1,0 +1,36 @@
+body{
+	padding:0.2rem 0.1rem;
+}
+h2{
+	margin-bottom: 0.15rem;
+	font-size:0.22rem;
+	text-align: center;
+}
+img{
+	display: block;
+	width:100%;
+}
+.banner{
+	margin-bottom: 0.4rem;
+}
+.goingEat-content li{
+	border-top: 0.02rem solid #FF6633;
+	font-size:0.16rem;
+}
+.goingEat-content h5{
+	display: inline-block;
+	margin-bottom: 0.08rem;
+	padding:0.06rem;
+	font-size:0.17rem;
+	background-color: #ff6633;
+	color:#fff;
+}
+.goingEat-content p{
+	text-indent:0.32rem;
+}
+.goingEat-content img{
+	margin:0.2rem 0 0.4rem 0;
+}
+.goingEat-content li:nth-last-of-type(1) img{
+	margin-bottom:0;
+}

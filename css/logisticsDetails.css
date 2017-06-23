@@ -1,0 +1,70 @@
+/*公共样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img { margin:0; padding:0; } 
+fieldset, img { border:none; }
+img{display: block;} 
+address, caption, cite, code, dfn, th, var { font-style:normal; font-weight:normal; }
+ul, ol,li { list-style:none; } 
+a {text-decoration:none; } 
+input{border:none;border:0;outline:none}
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
+.left{float:left;}
+.right{float:right;}
+/*自定义样式*/
+body{
+	padding:0 0.2rem;
+}
+h2{
+	padding:0.2rem 0 0.2rem 0.2rem;
+	font-size:0.4rem;
+	font-weight: normal;
+	border-bottom:1px solid #000;
+}
+.logisticsFollow{
+	padding:0 0 0 0.6rem;
+	position: relative;
+	overflow: hidden;
+}
+.logisticsFollow:before{
+	content:'';
+	display: block;
+	width:1px;
+	height:50rem;
+	position:absolute;
+	top:0.3rem;
+	left:0.3rem;
+	background-color:#ccc;
+}
+.logisticsFollow li{
+	padding:0.2rem 0 0.2rem 0;
+	position:relative;
+	border-width:0 0 1px 0;
+	border-color: #ccc;
+	border-style:solid;
+	font-size:0.22rem;
+}
+.logisticsFollow li:before{
+	content:'';
+	display: block;
+	width:0.2rem;
+	height:0.2rem;
+	position:absolute;
+	top:0.3rem;
+	left:-0.4rem;
+	border-radius: 0.2rem;
+	background-color:#ccc;
+}
+.logisticsFollow li:first-child{
+	color:limegreen;
+}
+.logisticsFollow li:first-child:before{
+	content: '';
+	display: block;
+	width:0.25rem;
+	height:0.25rem;
+	top:0.28rem;
+	left:-0.425rem;
+	border-radius:0.25rem;
+	background-color:limegreen;
+}
+
+

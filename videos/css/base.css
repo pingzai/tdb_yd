@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+/*清除默认样式*/
+*{ box-sizing:border-box;  font-weight:normal;}
+img{ vertical-align:top; border:none;}
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,dl,dd,input,textarea{ margin:0; padding:0;}
+li{ list-style:none}
+a{ color:#000; text-decoration:none;}
+i{font-style:normal;}
+/*重用*/
+html{ max-width:540px; height: 100%; margin: 0 auto; background: #fff; }
+.fl{ float:left;}
+.fr{ float:right;}
+.clearfix:after{ content:''; display:block; clear:both;}
+input{ outline:none; padding:0; margin:0; border:none; background:none;}
+textarea{outline:none; padding:0; margin:0; border:none; background:none; 
+				resize:none;}
+/*空视图样式*/
+.empty_box{ margin-top:5rem; text-align:center; }
+.empty_box img{ width:5.2rem;}
+.empty_box p{ margin-top:1.5rem; font-size:0.9rem; color:#999999;}
+
+

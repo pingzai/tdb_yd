@@ -1,0 +1,108 @@
+.personalCenter{
+    width: 100%;
+    overflow: hidden;
+}
+.personalCenter>.nickname{
+    width: 100%;
+    height: 1.22rem;
+    background:url("../img/jifenb.png") 100%;
+}
+.personalCenter>.nickname>div{
+    float: left;
+}
+.personalCenter>.nickname>img.headpic{
+    width: 0.857rem;
+    height: 0.857rem;
+    font-size: 13px;
+    float: left;
+    margin: 0.19rem;
+    border-radius: 50%;
+}
+.personalCenter>.nickname>div.username{
+    height: 100%;
+    width: 1rem;
+    text-align: left;
+    line-height: 1.22rem;
+    font-size: 0.17rem;
+    color: #fff;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.personalCenter>.nickname>div.mybreadth{
+    float: right;
+    border-left: 1px solid #e74753;
+    width: 1.1rem;
+    height: 0.9rem;
+    margin-top: 0.15rem;
+    cursor: pointer;
+    color: #fff;
+}
+.personalCenter>.nickname>div.mybreadth>p{
+    font-size: 0.13rem;
+    display: block;
+    text-align: center;
+    line-height: 0.45rem;
+}
+.personalCenter>.nickname>div.mybreadth>p.p02{
+    display: block;
+    width: 0.8rem;
+    margin: 0 auto;
+    font-size: 0.13rem;
+    text-align: center;
+    background-color: #fe855a;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    border-radius: 10px;
+}
+.personalCenter>.order-list{
+    width: 100%;
+    height: 0.95rem;
+    margin:0.104rem 0;
+}
+.personalCenter>.order-list>div{
+    width: 20%;
+    float: left;
+    height: 100%;
+}
+.personalCenter>.order-list>div>a{
+    display: block;
+    float: left;
+    width: 99%;
+    border-left:1px solid #f3f3f3;
+    height: 100%;
+    text-align: center;
+    position: relative;
+    font-size: 0.12rem;
+    color: #666;
+    background-color: #fff;
+}
+.personalCenter>.order-list>div:nth-child(0)>a{
+    border-left:none;
+}
+.personalCenter>.order-list>div>a>img{
+    display: block;
+    width: 0.35rem;
+    margin: 0.2rem auto;
+    margin-bottom: 0.1rem;
+}
+.personalCenter>ul{
+    width: 100%;
+    border-top: 1px solid #cbcbcb;
+    margin-bottom: 0.8rem;
+}
+.personalCenter>ul>li{
+    width: 100%;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 0.14rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+.personalCenter>ul>li>img{
+    display: inline-block;
+    width: 0.3rem;
+    margin:0 0.19rem;
+    vertical-align: middle;
+}

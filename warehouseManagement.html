@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/warehouseManagement.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/page.js"></script>
+    <script type="text/javascript" src="scripts/warehouseManagement.js"></script>
+</head>
+<body>
+<div class="mb"></div>
+<div class="container">
+    <div class="top">
+        <div class='titleBox'>
+            <h3>仓库管理</h3>
+            <p>Warehouse  management</p>
+        </div>
+        <div class="search">
+            <div class="partOne">
+                <input type="text" placeholder="请输入商品名称" id="name"/><input class="find" type="button" value="search"/>
+            </div>
+            <div class="partTwo">
+                <div class="condition"><img src="images/select.png"><span class="qw">条件筛选</span></div>
+            </div>
+            <div class="partThree">
+                <ul>
+                    <li>
+                        <div>
+                            <p>卖家名称</p>
+                            <img src="images/select.png" class="selectDown">
+                            <select id="seller">
+
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <p>类目</p><input type="text" id="class">
+                            <!--<p>类目</p>-->
+                            <!--<img src="images/select.png" class="selectDown">-->
+                            <!--<select id="c_id">-->
+                                <!--<option selected="selected"></option>-->
+                                <!--<option value="1">鞋子</option>-->
+                                <!--<option value="2">裤子</option>-->
+                                <!--<option value="3">水果</option>-->
+                            <!--</select>-->
+                        </div>
+                    </li>
+                    <li>
+                        <div><p>商品名称</p><input type="text" id="i_name"></div>
+                    </li>
+                </ul>
+                <p class="searchBtn">搜索</p>
+            </div>
+            <div class="partFour">
+                <div class="up"><img src="images/top_arr.png"><span class="qwe">收起</span></div>
+            </div>
+        </div>
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="classification">
+            <div class="add"></div>
+            <div>商品编号</div>
+            <div>名称</div>
+            <div>类目</div>
+            <div>卖家</div>
+        </div>
+        <div class="list">
+            <ul id="list">
+
+            </ul>
+        </div>
+        <div class="tcdPageCode"></div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+<div class="allClass">
+    <span class="close">X</span>
+</div>
+</body>
+</html>

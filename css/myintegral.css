@@ -1,0 +1,140 @@
+.intergal-min{
+    width: 100%;
+    height: 1.22rem;
+    background: url("../img/jifenb.png");
+    position: relative;
+    border-bottom: 1px solid #cbcbcb;
+    border-top: 1px solid #fff;
+}
+.intergal-min>p.p1{
+    margin-top: 0.1rem;
+    font-size: 0.13rem;
+    text-align: center;
+    line-height: 0.3rem;
+    color: #fff;
+}
+.intergal-min>p.p2{
+    text-align: center;
+    font-size: 0.23rem;
+    color: #fff;
+}
+.intergal-min>span{
+    position: absolute;
+    font-size: 0.14rem;
+    width: 0.8rem;
+    height: 0.3rem;
+    text-align: center;
+    line-height: 0.3rem;
+    top: 0.8rem;
+    border-radius:0.16rem;
+    right: 1.4rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff8759;
+}
+.intergal-ul>li{
+    width: 100%;
+    height: 0.4rem;
+    line-height: 0.4rem;
+    border-bottom: 1px solid #cbcbcb;
+    font-size: 0.133rem;
+}
+.intergal-ul>li.li1{
+    padding-left: 0.08rem;
+    width: 3.5rem;
+}
+.intergal-ul>li>span{
+    display: block;
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    line-height: 0.38rem;
+    text-align: center;
+}
+.exchange{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0,0,0,.8);
+    z-index: 100;
+    font-size: 13px;
+    display: none;
+}
+.exchange>div{
+    width: 3rem;
+    height: 2rem;
+    border-top: 1px solid #333;
+    margin: 0.6rem auto;
+    background: url("../img/jifen01.png") no-repeat;
+    background-size: 100%;
+    position: relative;
+}
+.exchange>div>div.ts{
+    background: url(../img/integralSuccces.png) no-repeat;
+    background-size: 100%;
+    width: 1.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    display: none;
+}
+.exchange>span.close{
+    position: absolute;
+    top: 3.4rem;
+    left: 1.75rem;
+    display: block;
+    width: 0.2rem;
+    height: 0.2rem;
+    background: url(../img/close.png) no-repeat;
+    background-size: 100%;
+}
+.exchange>div>.p2{
+   font-size: 0.13rem;
+    text-align: center;
+    color: #999;
+    margin-top: 0.61rem;
+}
+.exchange>div>.p3{
+    display: block;
+    width: 2rem;
+    height: 0.28rem;
+    text-align: center;
+    font-size: 0.1rem;
+    margin: 0.3rem auto;
+    line-height: 0.15rem;
+    color: #989898;
+}
+.exchange>div>div{
+    position: relative;
+    width: 90%;
+    height: 0.38rem;
+    margin: 0.15rem auto;
+}
+.exchange>div>div input{
+    width: 1.14rem;
+    height: 0.3rem;
+    border: 1px solid #f8bca3;
+    position: absolute;
+    top: -0.1rem;
+    outline-style: none;
+    left: 0.8rem;
+    text-align: center;
+    border-radius: 5px;
+}
+.exchange>div>div>span{
+    position: absolute;
+    width: 0.65rem;
+    height: 0.28rem;
+    line-height: 0.28rem;
+    text-align: center;
+    right: 1rem;
+    top: 0.26rem;
+    font-size: 0.14rem;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff4f4f;
+}

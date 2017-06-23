@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+	/*pg1*/
+html,body{ width: 100%;}
+body{ background:#fff; }
+/*页面加载*/
+/*===========页面加载开始===============*/
+#preloader {position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff; z-index:999999; }
+#status {
+	position:fixed;
+	z-index:999999;
+	width:250px;
+	height:250px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background-size:32px 32px;
+	margin-top: -125px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: -115px;
+}
+#status p{top:70%;}
+.center-text{
+	text-align:center;
+	background-image: url(../imgs/home/loading.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 182px;
+	width: 234px;
+}
+.center-text span {
+	font-size: 14px;
+	color: #999999;
+	position: relative;
+	top: 170px;
+}
+/*search-box*/
+.search-box{position:fixed;top:0;z-index: 650; display:flex; height:2.25rem; line-height: 2.25rem;  text-align: center;background:#fff;width:100%;}
+.search-box div:nth-child(1){ height:100%; flex:61; padding-left:1.35rem;}
+.search-box div:nth-child(2){ height:100%; flex:14; text-align:center;}
+.search-box .search-txt,.search-box .search-btn{ display:inline-block; vertical-align:middle;}
+.search-box .search-txt{ width:100%; height:1.5rem; background:#efefef; border-radius:0.3rem; padding-left:0.5rem;}
+.search-box .search-btn{ width:1.075rem; height:1.075rem; background:url(../imgs/home/search.png) no-repeat center; background-size: 100%;}
+.search-background{width: 100%;height: 100%;z-index: 640;background-color: #000;opacity: .6;display:none;position: fixed;top: 0;left: 0;}
+.search-list{position:fixed;z-index:650;top:2.25rem;background:#fff;width:100%;display:none;}
+.search-list i{position:absolute;right:20px;top:8px;font-size:0.55rem;color:red;}
+.search-list-nav li{background-color: #B6B6B6;color: #FFF;border-radius: 3px;display: inline-block;height: 18px;line-height: 17px;text-align: center;margin: 8px 0 0 12px;padding: 0 2px;font-size:0.5rem;}
+.search-list-nav .search-active{background-color:#8B864E;}
+.search-list-con li{padding:10px 0;display:none;}
+.search-list-con li a{display: inline-block;background-color: #f0f1f2;margin: 2px 0 2px 10px;height: 27px;line-height: 27px;font-size:0.55rem;padding: 0 15px;}
+
+
+/*nav*/
+.nav{ display:flex; width:100%; height:2.2rem;margin-top:2.2rem; }
+.nav li{flex:1; height:100%; text-align:center; line-height:2.2rem; }
+.nav li a{ display: inline-block; height:1.5rem; padding:0 0.4rem; font-size: 0.75rem; line-height:1.5rem; color: #3e3e3e; }
+.nav li .active{ border-bottom: 2px solid #3e3e3e; }
+
+/*swiper*/
+.swiper-container{ width:100%; height:10rem;}
+.swiper-container a{ display:block; width:100%; height:100%; overflow: hidden;}
+
+/*banner*/
+.banner{ width:100%; height:4.1rem; padding:0.5rem; overflow:hidden;}
+.banner a{ display:block; }
+.banner img{ width:100%;}
+
+.line{ width:100%; height:0.2rem; background:#eeeeee;}
+
+/*con*/
+.con h2{ height:2.25rem; line-height:2.25rem; padding: 0 0.5rem;}
+.con h2 .tit{ text-align:left;}
+.con h2 .more{ text-align:right;}
+.con h2 span,.con h2 a{ display:inline-block; margin:0; padding:0;}
+.con h2 .tit span{ font-size:0.75rem; color:#454545; padding-left:1.4rem; background: url(../imgs/home/tv.png) no-repeat left; background-size:0.975rem 0.725rem; }
+.con h2 .more span{font-size:0.6rem; color:#686868; margin-right: 0.5rem; }
+.con h2 .more a{ font-size:0.6rem; color:#949494;}
+
+.con .list{ padding:0 0.5rem;}
+.con .list li{ width:50%; text-align:center;}
+.con .list li a{ display: block; width:100%; padding-bottom: 0.5rem;}
+.con .list img{ width:90.7%;}
+.con .list p{ padding: 0 0.8rem; text-align:left;}
+.con .list .tit{height:0.8rem; font-size:0.65rem; color:#434343; margin-top: 0.2rem; line-height:1rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 1;overflow: hidden;}
+.con .list .txt{ font-size:0.55rem; color:#999; line-height:0.8rem;display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2;overflow: hidden;}
+
+/*swiper2*/
+.swiper-container2{ width:90%; margin:0 auto; overflow:hidden;}
+.swiper-container2 .column-list{ width:100%;}
+.swiper-container2 .swiper-slide{ width:4.6rem; }
+.swiper-container2 a{ display:block;}
+.swiper-container2 img{width:100%;}
+.swiper-container2 p{ font-size:0.6rem; color:#444; height:1.6rem; line-height:1.6rem; overflow:hidden; white-space: nowrap; text-overflow: ellipsis;}
+
+
+
+

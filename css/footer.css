@@ -1,0 +1,35 @@
+.footer {
+    position: fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    height: 0.45rem;
+    background-color: #cccccc;
+    z-index: 100;
+}
+.footer a {
+    display: block;
+    width: 25%;
+    font-size: 0.1rem;
+    float: left;
+    text-align: center;
+    color: #000;
+}
+.footer a img {
+    display: block;
+    width: 0.38rem;
+    height: 0.35rem;
+    margin: 0.05rem auto;
+}
+.footer a:nth-child(0)>img {
+    width: 0.25rem;
+}
+.footer a:nth-child(1)>img {
+    width: 0.25rem;
+}
+.footer a:nth-child(2)>img {
+    width: 0.25rem;
+}
+.footer a:nth-child(3)>img {
+    width: 0.28rem;
+}

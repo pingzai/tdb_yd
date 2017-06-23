@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增卖家</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/sellerMsg.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/sellerMsg.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class='titleBox'>
+            <h3>卖家管理</h3>
+            <p>Seller management</p>
+        </div>
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="msgList">
+            <ul>
+                <li class="li1">
+                    <p class="title">卖家编号</p><input id="number" type="text" disabled>
+                </li>
+                <li>
+                    <p class="title">卖家名称</p><input id="name" type="text">
+                </li>
+                <li>
+                    <p class="title">联系方式1</p><input id="tel" type="text">
+                </li>
+                <li>
+                    <p class="title">联系方式2</p><input id="phone" type="text">
+                </li>
+                <li>
+                    <p class="title">卖家住址</p><input id="address" type="text">
+                </li>
+                <li class="li2">
+                    <p class="title">卖家状态</p><input id="state" type="text" disabled>
+                </li>
+            </ul>
+        </div>
+        <div class="remark">
+            <div class="remarks">备注</div>
+                <textarea id="note"  onmousedown="s(event,this)">
+
+                </textarea>
+        </div>
+        <div class="foot">
+            <span class="send">发布/保存</span><span class="back">返回</span>
+        </div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

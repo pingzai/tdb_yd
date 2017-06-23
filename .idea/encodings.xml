@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/css/adminManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/advertising.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/categoryManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/commodityManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/commodityMsg.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/distribution.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/foundation-datepicker.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/marketingActivity.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/marketingPacke.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/memberManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/memberOrder.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/orderInformation.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/orderManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/regionalManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/sellerManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/sellerMsg.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/toDo.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/updatePwd.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/css/warehouseManagement.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/addCommodity.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/adminManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/advertising.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/categoryManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/commodityManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/jQuery/showImg.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/memberManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/orderInformation.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/orderManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/regionalManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/sellerManagement.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/sellerMsg.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/toDo.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/updatePwd.js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/scripts/warehouseManagement.js" charset="UTF-8" />
+  </component>
+</project>

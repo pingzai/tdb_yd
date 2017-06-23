@@ -1,0 +1,65 @@
+body{
+	padding:0.2rem 0.1rem;
+}
+h1{
+	margin-bottom: 0.15rem;
+	font-size:0.22rem;
+	text-align: center;
+}
+.holiday-box img{
+	display: block;
+	width:100%;
+}
+.holiday-box p{
+	padding:0.1rem;
+	background-color:#f4f4f4;
+	font-size:0.14rem;
+	text-indent:0.28rem;
+	line-height: 0.22rem;
+}
+.holiday-page{
+	margin-top:0.25rem;
+	margin-bottom: 0.5rem;
+	position: relative;
+}
+.holiday-page:nth-last-of-type(1){
+	margin-bottom: 0.1rem;
+}
+.holiday-page span{
+	display: block;
+	width:0.24rem;
+	height:0.14rem;
+}
+.holiday-page .topLeft{
+	position: absolute;
+	top:0;
+	left:0;
+	border-top:2px solid #ccc;
+	border-left:2px solid #ccc;
+}
+.holiday-page .topRight{
+	position: absolute;
+	top:0;
+	right:0;
+	border-top:2px solid #ccc;
+	border-right:2px solid #ccc;
+}
+.holiday-page .botLeft{
+	position: absolute;
+	bottom:0;
+	left:0;
+	border-bottom:2px solid #ccc;
+	border-left:2px solid #ccc;
+}
+.holiday-page .botRight{
+	position: absolute;
+	bottom:0;
+	right:0;
+	border-bottom:2px solid #ccc;
+	border-right:2px solid #ccc;
+}
+
+
+
+
+

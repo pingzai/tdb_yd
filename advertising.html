@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>广告管理</title>
+    <link href="css01/foundation-datepicker.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link rel="stylesheet" href="css01/advertising.css"/>
+    <script src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/foundation-datepicker.zh-CN.js"></script>
+    <script src="scripts/jQuery/showImgs.js"></script>
+    <script src="scripts/advertising.js"></script>
+</head>
+<body>
+<div class="mb">
+    <div class="editor">
+        <span class="close">X</span>
+        <ul class="ul1">
+            <li>广告名称</li>
+            <li>广告开始时间</li>
+            <li>广告结束时间</li>
+            <li>对应链接</li>
+            <li>备注</li>
+        </ul>
+        <ul class="ul2">
+            <li><input type="text" id="advertName"/></li>
+            <li><input type="text" id="beginTime" /></li>
+            <li><input type="text" id="endTime"/></li>
+            <li><input type="text" id="href" placeholder="请以http://开头"/></li>
+            <li><textarea id="note" name="note" cols="10" rows="10"></textarea></li>
+        </ul>
+        <div class="pic">
+            <img id="file6"/>
+            <span>(404x184)</span>
+            <input type="file" class="filePic" id="filePic" onchange='previewImageSix(this)'>
+        </div>
+        <div class="keep">编辑/保存</div>
+    </div>
+</div>
+<div class="min">
+    <div class="advertising-nav">
+        <div class="nav-l">
+            <p>广告管理</p>
+            <span>Advertising management</span>
+        </div>
+        <div class="nav-admin">
+            <span>管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="content-l">
+            <div class="l-nav">
+                广告布局
+                <div>
+                    <pre>(     未使用     使用       将到期)</pre>
+                    <span class="s1"></span>
+                    <span class="s2"></span>
+                    <span class="s3"></span>
+                </div>
+            </div>
+            <div class="l-min">
+                <div class="advertising-head">
+                    <span>头幅</span>
+                </div>
+                <div class="advertising-t">
+                    <span>条幅</span>
+                </div>
+                <span class="gg">分类</span>
+                <ul class="advertising-classify" id="classify">
+                    <li><span>1</span></li>
+                    <li><span>2</span></li>
+                    <li><span>3</span></li>
+                    <li><span>4</span></li>
+                    <li><span>5</span></li>
+                    <li><span>6</span></li>
+                    <!--<li><span>7</span></li>-->
+                    <!--<li><span>8</span></li>-->
+                </ul>
+                <div class="advertising-sale">
+                    <div class="box1">
+                        <span>1</span>
+                    </div>
+                    <div>
+                        <span>2</span>
+                    </div>
+                    <div>
+                        <span>3</span>
+                    </div>
+                    <div>
+                        <span>4</span>
+                    </div>
+                    <div>
+                        <span>5</span>
+                    </div>
+                    <span>特卖</span>
+                </div>
+                <div class="advertising-hot">
+                    <div class="box1"><span>1</span></div>
+                    <div><span>2</span></div>
+                    <div><span>3</span></div>
+                    <div class="box2"><span>4</span></div>
+                    <div class="box1"><span>5</span></div>
+                    <div><span>6</span></div>
+                    <div><span>7</span></div>
+                    <div class="box2"><span>8</span></div>
+                    <span>热卖</span>
+                </div>
+            </div>
+        </div>
+        <div class="content-r">
+            <div class="r-head">
+
+            </div>
+            <ul class="r-min">
+                <li id="liFirst">
+                    <div class="banner-name">
+                        <span class="span1">广告位①</span>
+
+                        <p id="pTitle1"></p>
+                        <span class="span2"></span>
+                    </div>
+                    <div class="banner-content">
+                        <div class="b1">广告起始时间:</div>
+                        <div class="b2" id="a1"></div>
+                        <div class="b1">对应商品编号:</div>
+                        <div class="b2" id="a2"></div>
+                        <div class="b1">广告结束时间:</div>
+                        <div class="b2" id="a3"></div>
+                        <div class="b1">广告位状态:</div>
+                        <div class="b2" id="a4"></div>
+                        <div class="b1">备注:</div>
+                        <div class="b3" id="a5"></div>
+                    </div>
+                    <div class="btn" id="a6" state="0">
+                        编辑
+                    </div>
+                    <input type="hidden" value="1">
+                </li>
+                <li>
+                    <div class="banner-name">
+                        <span class="span1">广告位②</span>
+
+                        <p id="pTitle2"></p>
+                        <span class="span2"></span>
+                    </div>
+                    <div class="banner-content">
+                        <div class="b1">广告起始时间:</div>
+                        <div class="b2" id="b1"></div>
+                        <div class="b1">对应商品编号:</div>
+                        <div class="b2" id="b2"></div>
+                        <div class="b1">广告结束时间:</div>
+                        <div class="b2" id="b3"></div>
+                        <div class="b1">广告位状态:</div>
+                        <div class="b2" id="b4"></div>
+                        <div class="b1">备注:</div>
+                        <div class="b3" id="b5"></div>
+                    </div>
+                    <div class="btn" id="b6" state="0">
+                        编辑
+                    </div>
+                    <input type="hidden" value="2">
+                    <!--<div class="editor">-->
+                        <!--<ul class="ul1">-->
+                            <!--<li>广告名称</li>-->
+                            <!--<li>广告开始时间</li>-->
+                            <!--<li>广告结束时间</li>-->
+                            <!--<li>对应链接</li>-->
+                            <!--<li>备注</li>-->
+                        <!--</ul>-->
+                        <!--<ul class="ul2">-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><textarea name="note" cols="10" rows="10"></textarea></li>-->
+                        <!--</ul>-->
+                        <!--<div class="pic">-->
+                            <!--点击上传/编辑图片-->
+                            <!--<span>(1920x300)</span>-->
+                        <!--</div>-->
+                        <!--<div class="keep">编辑/保存</div>-->
+                    <!--</div>-->
+                </li>
+                <li>
+                    <div class="banner-name">
+                        <span class="span1">广告位③</span>
+
+                        <p id="pTitle3"></p>
+                        <span class="span2"></span>
+                    </div>
+                    <div class="banner-content">
+                        <div class="b1">广告起始时间:</div>
+                        <div class="b2" id="c1"></div>
+                        <div class="b1">对应商品编号:</div>
+                        <div class="b2" id="c2"></div>
+                        <div class="b1">广告结束时间:</div>
+                        <div class="b2" id="c3"></div>
+                        <div class="b1">广告位状态:</div>
+                        <div class="b2" id="c4"></div>
+                        <div class="b1">备注:</div>
+                        <div class="b3" id="c5"></div>
+                    </div>
+                    <div class="btn" id="c6" state="0">
+                        编辑
+                    </div>
+                    <input type="hidden" value="3">
+                    <!--<div class="editor">-->
+                        <!--<ul class="ul1">-->
+                            <!--<li>广告名称</li>-->
+                            <!--<li>广告开始时间</li>-->
+                            <!--<li>广告结束时间</li>-->
+                            <!--<li>对应链接</li>-->
+                            <!--<li>备注</li>-->
+                        <!--</ul>-->
+                        <!--<ul class="ul2">-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><textarea name="note" cols="10" rows="10"></textarea></li>-->
+                        <!--</ul>-->
+                        <!--<div class="pic">-->
+                            <!--点击上传/编辑图片-->
+                            <!--<span>(1920x300)</span>-->
+                        <!--</div>-->
+                        <!--<div class="keep">编辑/保存</div>-->
+                    <!--</div>-->
+                </li>
+                <li>
+                    <div class="banner-name">
+                        <span class="span1">广告位④</span>
+
+                        <p id="pTitle4"></p>
+                        <span class="span2"></span>
+                    </div>
+                    <div class="banner-content">
+                        <div class="b1">广告起始时间:</div>
+                        <div class="b2" id="d1"></div>
+                        <div class="b1">对应商品编号:</div>
+                        <div class="b2" id="d2"></div>
+                        <div class="b1">广告结束时间:</div>
+                        <div class="b2" id="d3"></div>
+                        <div class="b1">广告位状态:</div>
+                        <div class="b2" id="d4"></div>
+                        <div class="b1">备注:</div>
+                        <div class="b3" id="d5"></div>
+                    </div>
+                    <div class="btn" id="d6" state="0">
+                        编辑
+                    </div>
+                    <input type="hidden" value="4">
+                    <!--<div class="editor">-->
+                        <!--<ul class="ul1">-->
+                            <!--<li>广告名称</li>-->
+                            <!--<li>广告开始时间</li>-->
+                            <!--<li>广告结束时间</li>-->
+                            <!--<li>对应链接</li>-->
+                            <!--<li>备注</li>-->
+                        <!--</ul>-->
+                        <!--<ul class="ul2">-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><textarea name="note" cols="10" rows="10"></textarea></li>-->
+                        <!--</ul>-->
+                        <!--<div class="pic">-->
+                            <!--点击上传/编辑图片-->
+                            <!--<span>(1920x300)</span>-->
+                        <!--</div>-->
+                        <!--<div class="keep">编辑/保存</div>-->
+                    <!--</div>-->
+                </li>
+                <li>
+                    <div class="banner-name">
+                        <span class="span1">广告位⑤</span>
+
+                        <p id="pTitle5"></p>
+                        <span class="span2"></span>
+                    </div>
+                    <div class="banner-content">
+                        <div class="b1">广告起始时间:</div>
+                        <div class="b2" id="e1"></div>
+                        <div class="b1">对应商品编号:</div>
+                        <div class="b2" id="e2"></div>
+                        <div class="b1">广告结束时间:</div>
+                        <div class="b2" id="e3"></div>
+                        <div class="b1">广告位状态:</div>
+                        <div class="b2" id="e4"></div>
+                        <div class="b1">备注:</div>
+                        <div class="b3" id="e5"></div>
+                    </div>
+                    <div class="btn" id="e6" state="0">
+                        编辑
+                    </div>
+                    <input type="hidden" value="5">
+                    <!--<div class="editor">-->
+                        <!--<ul class="ul1">-->
+                            <!--<li>广告名称</li>-->
+                            <!--<li>广告开始时间</li>-->
+                            <!--<li>广告结束时间</li>-->
+                            <!--<li>对应链接</li>-->
+                            <!--<li>备注</li>-->
+                        <!--</ul>-->
+                        <!--<ul class="ul2">-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><input type="text"/></li>-->
+                            <!--<li><textarea name="note" id="" cols="10" rows="10"></textarea></li>-->
+                        <!--</ul>-->
+                        <!--<div class="pic">-->
+                            <!--点击上传/编辑图片-->
+                            <!--<span>(1920x300)</span>-->
+                        <!--</div>-->
+                        <!--<div class="keep">编辑/保存</div>-->
+                    <!--</div>-->
+                </li>
+            </ul>
+        </div>
+        <div class="content-h">
+            <div class="r-head">
+                分类区广告位
+                <span></span>
+            </div>
+            <ul>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>1</span><input type="text" id="input1" placeholder="分类位1名称">
+                            <span class="addAdv" id="save1" advId="a">保存</span>
+                            <input type="hidden" value="1">
+                        </p>
+                        <input type="file" class="files" id="fileOne" onchange="previewImage(this)">
+                        <p class="showImg" id="showImg">
+                            <img id="file0">
+                        </p>
+                        <p class="a"></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>2</span><input type="text" id="input2" placeholder="分类位2名称">
+                            <span class="addAdv" id="save2" advId="a">保存</span>
+                            <input type="hidden" value="2">
+                        </p>
+                        <input type="file" class="files" id="fileOnes" onchange="previewImageOne(this)">
+                        <p class="showImg" id="showImgOne">
+                            <img id="file1">
+                        </p>
+                        <p class="a">对应链接<input type="text" id="href2" class="b" placeholder="请以http://开头"></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>3</span><input type="text" id="input3" placeholder="分类位3名称">
+                            <span class="addAdv" id="save3" advId="a">保存</span>
+                            <input type="hidden" value="3">
+                        </p>
+                        <input type="file" class="files" id="fileTwo" onchange="previewImageTwo(this)">
+                        <p class="showImg" id="showImgTwo">
+                            <img id="file2">
+                        </p>
+                        <p class="a">对应链接<input type="text" id="href3" class="b" placeholder="请以http://开头"></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>4</span><input type="text" id="input4" placeholder="分类位4名称">
+                            <span class="addAdv" id="save4" advId="a">保存</span>
+                            <input type="hidden" value="4">
+                        </p>
+                        <input type="file" class="files" id="fileThree" onchange="previewImageThree(this)">
+                        <p class="showImg" id="showImgThree">
+                            <img id="file3">
+                        </p>
+                        <p class="a">对应链接<input type="text" id="href4" class="b" placeholder="请以http://开头"></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>5</span><input type="text" id="input5" placeholder="分类位5名称">
+                            <span class="addAdv" id="save5" advId="a">保存</span>
+                            <input type="hidden" value="5">
+                        </p>
+                        <input type="file" class="files" id="fileFour" onchange="previewImageFour(this)">
+                        <p class="showImg" id="showImgFour">
+                            <img id="file4">
+                        </p>
+                        <p class="a">对应链接<input type="text" id="href5" class="b" placeholder="请以http://开头"></p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="title">分类位<span>6</span><input type="text" id="input6" placeholder="分类位6名称">
+                            <span class="addAdv" id="save6" advId="a">保存</span>
+                            <input type="hidden" value="6">
+                        </p>
+                        <input type="file" class="files" id="fileFive" onchange="previewImageFive(this)">
+                        <p class="showImg" id="showImgFive">
+                            <img id="file5">
+                        </p>
+                        <p class="a"></p>
+                    </div>
+                </li>
+            </ul>
+            <!--<div class="send">保存</div>-->
+        </div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+  <meta charset="UTF-8">
+  <title></title>
+  <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+  <script>
+//    var http="localhost:8080/";
+    $(function(){
+      onload();
+    });
+    function onload(){
+      var obj={};
+      obj.name="zkq";
+      obj.state=parseInt(1);
+      obj.gender=parseInt(1);
+      obj.phone="13111210000";
+     var objs=JSON.stringify(obj);
+      $.ajax({
+        url: "https://192.168.0.195:8080/addUser",
+        type: "post",
+        dataType: "json",
+//        contentType: "application/json",
+        data: {"name":"zkq"},
+        catch: false,
+        success: function (data) {
+          if (data.success == true) {
+          }
+          else {
+
+          }
+        },
+        error: function () {
+
+        }
+      });
+
+    }
+    function aa(){
+      var num1= /^[0-9]+([.]{1}[0-9]+){0,1}$/;
+      var a=$("#test").val();
+      if(!num1.test(a)){
+        alert(0)
+      }
+    }
+  </script>
+</head>
+<body>
+<input id="test" type="text">
+<button onclick="aa();"></button>
+</body>
+</html>

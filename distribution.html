@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>分销管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link rel="stylesheet" href="css01/distribution.css"/>
+    <script src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="scripts/jQuery/QRCode.js"></script>
+    <script src="scripts/jQuery/page.js"></script>
+    <script src="scripts/distribution.js"></script>
+</head>
+<body>
+<div class="mb"></div>
+<div class="min">
+    <div class="distribution-nav">
+        <div class="nav-l">
+            <p>分销统计</p>
+            <span>Distribution statistics</span>
+        </div>
+        <div class="nav-search">
+            <input type="text" placeholder="请输入员工姓名" id="search"/>
+            <span id="find">search</span>
+            <div class="partTwo">
+                <div class="condition"><img src="images/select.png"><span class="qw">条件筛选</span></div>
+            </div>
+            <div class="partThree">
+                <ul>
+                    <li>
+                        <div><p>车段</p>
+                            <select id="car">
+                            </select>
+                            <img src="images/select.png" class="select">
+                        </div>
+                    </li>
+                    <li>
+                        <div><p>部门</p>
+                           <input type="text" readonly id="department">
+                            <img src="images/select.png" class="select">
+                        </div>
+                    </li>
+                </ul>
+                <p class="searchBtn" id="searchBtn">搜索</p>
+            </div>
+            <div class="partFour">
+                <div class="up"><img src="images/top_arr.png"><span class="qwe">收起</span></div>
+            </div>
+        </div>
+        <div class="nav-admin">
+            <span>管理员</span>
+            <span id="userName"></span>
+        </div>
+
+    </div>
+    <div class="content">
+    <ul class="append-distribution"  id="ul">
+    <li class="list">
+        <div class="d1"></div>
+        <div>分销员编号</div>
+        <div>姓名</div>
+        <div>联系方式</div>
+        <!--<div>件数</div>-->
+        <!--<div>金额</div>-->
+        <div class="d7">状态</div>
+    </li>
+    <!--<li class="append-li">-->
+        <!--<div class="d1">-->
+            <!--查看二维码-->
+            <!--<div class="code">-->
+                <!--<img src="images/add3.png" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div>0000001</div>-->
+        <!--<div>沈惟冉</div>-->
+        <!--<div>13787565447</div>-->
+        <!--<div>50</div>-->
+        <!--<div>200.00</div>-->
+        <!--<div class="d7">挂起</div>-->
+    <!--</li>-->
+    <!--<li class="append-li">-->
+        <!--<div class="d1">-->
+            <!--查看二维码-->
+            <!--<div class="code">-->
+                <!--<img src="images/add.png" alt=""/>-->
+            <!--</div>-->
+        <!--</div>-->
+        <!--<div>0000002</div>-->
+        <!--<div>张凯强</div>-->
+        <!--<div>13563587456</div>-->
+        <!--<div>42</div>-->
+        <!--<div>666.00</div>-->
+        <!--<div class="d7">正常</div>-->
+    <!--</li>-->
+    </ul>
+    </div>
+    <div class="tcdPageCode"></div>
+    <div class="change-distribution">
+        <ul class="ul1">
+            <li>
+                <span>分销员编号</span>
+                <input type="text" id="ipt01" disabled/>
+            </li>
+            <li>
+                <span>分销员姓名</span>
+                <input type="text" id="ipt02" disabled/>
+            </li>
+            <li>
+                <span>完成件数</span>
+                <input type="text" id="ipt03" disabled/>
+            </li>
+            <li>
+                <span id="qrcode">二维码</span>
+            </li>
+        </ul>
+        <ul class="ul2">
+            <li>
+                <span>联系方式</span>
+                <input type="text" id="ipt04" disabled/>
+            </li>
+            <li>
+                <span>分销员状态</span>
+                <select name="state" id="state" disabled>
+                    <option value="1">正常</option>
+                    <option value="2">挂起</option>
+                </select>
+            </li>
+            <li>
+                <span>统计金额</span>
+                <input type="text" id="ipt05" disabled/>
+            </li>
+        </ul>
+        <div class="change-btn">
+            <span class="release" data-state="0">返回</span>
+        </div>
+    </div>
+
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+<div class="allClass">
+    <span class="close">X</span>
+    <p class="submit">提交</p>
+</div>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>待办事项</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/sellerManagement.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/page.js"></script>
+    <script type="text/javascript" src="scripts/sellerManagement.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class='titleBox'>
+            <h3>卖家管理</h3>
+            <p>Seller management</p>
+        </div>
+        <div class="search">
+            <div class="partOne">
+                <input type="text" id="orderNum" placeholder="请输入卖家名称"/><input class="find" id="find" type="button" value="search"/>
+            </div>
+        </div>
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="list">
+        <div class="inf-list" id="list">
+            <ul class="ul1">
+                <li><p class="addSeller">新增卖家</p></li>
+                <li style="width: 10%">卖家编号</li>
+                <li style="width: 55%">卖家名称</li>
+                <li style="width: 15%">状态</li>
+            </ul>
+            <div class="list-min">
+
+            </div>
+
+        </div>
+    </div>
+    <div class="tcdPageCode"></div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

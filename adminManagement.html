@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link rel="stylesheet" href="css01/adminManagement.css"/>
+    <script src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script src="scripts/jQuery/page.js"></script>
+    <script src="scripts/adminManagement.js"></script>
+</head>
+<body>
+<div class="min">
+    <div class="min-right">
+        <div class="nav">
+            <div class="nav-memberName">
+                <p>管理员管理</p>
+                <span>Administrator management</span>
+            </div>
+            <div class="nav-search">
+                <input type="text" id="search" placeholder="请输入管理员姓名"/>
+                <span id="searchAdmin">search</span>
+            </div>
+            <div class="nav-adminName">
+                <span>管理员</span>
+                <span id="userNames"></span>
+            </div>
+        </div>
+        <div class="inf-list" id="list">
+            <ul class="ul1">
+                <span id="append">新增管理员</span>
+                <li class="list1">姓名</li>
+                <li class="list2">联系方式</li>
+                <li class="list3">对应权限</li>
+                <li class="list4">状态</li>
+            </ul>
+            <div class="list-min">
+                <!--<ul class="list-ul active">-->
+                    <!--<li style="margin-left: 100px;width: 255px">张三</li>-->
+                    <!--<li class="list2">13558969785</li>-->
+                    <!--<li class="list3">订单管理,商品管理,类目管理,区域管理,广告管理,分销统计,会员管理</li>-->
+                    <!--<li class="li1 list4" style="width: 80px">-->
+                        <!--<div>-->
+                            <!--<span class="normal">正常</span>-->
+                            <!--<span class="holdUp">挂起</span>-->
+                        <!--</div>-->
+                    <!--</li>-->
+                <!--</ul>-->
+            </div>
+            <div class="tcdPageCode"></div>
+        </div>
+        <div class="change-inf">
+            <form action="">
+                <div class="part">
+                    <div class="change-name">
+                        <label>后台人员姓名</label>
+                    </div>
+                    <input id="houtaiName" type="text"/>
+                </div>
+                <div class="part">
+                    <div class="change-name">
+                        <label>联系方式</label>
+                    </div>
+                    <input id="tel" type="text"/>
+                </div>
+                <div class="quanxian">
+                    <span>对应权限</span>
+
+                    <div class="check-list">
+                        <ul id="quanxian">
+                            <li><label><input name="check" value="1" id="0" type="checkbox"/>订单管理</label></li>
+                            <li><label><input name="check" value="2" id="1" type="checkbox"/>商品管理</label></li>
+                            <li><label><input name="check" value="3" id="2" type="checkbox"/>类目管理</label></li>
+                            <li><label><input name="check" value="4" id="3" type="checkbox"/>区域管理</label></li>
+                            <li><label><input name="check" value="5" id="4" type="checkbox"/>广告管理</label></li>
+                            <li><label><input name="check" value="6" id="5" type="checkbox"/>分销统计</label></li>
+                            <li><label><input name="check" value="7" id="6" type="checkbox"/>会员管理</label></li>
+                        </ul>
+                    </div>
+                </div>
+                <div>
+                    <div class="part">
+                        <div class="change-name">
+                            <label>用户名</label>
+                        </div>
+                        <input id="userName" type="text"/>
+                    </div>
+                    <div class="part" style="margin-left: -158px">
+                        <div class="change-name">
+                            <label>登录密码</label>
+                        </div>
+                        <input id="passWorld" type="text"/>
+                        <input id="update" type="button" value="重置密码">
+                    </div>
+                </div>
+                <div class="remark">
+                    <div class="remarks">备注</div>
+                <textarea id="note"  onmousedown="s(event,this)">
+
+                </textarea>
+                </div>
+                <!--<div class="change-admin">-->
+                <!--<label >用户名：<input id="userName" type="text"/></label>-->
+                <!--</div>-->
+                <!--<div class="change-passworld">-->
+                <!--<label >登录密码：<input id="passWorld" type="password"/></label>-->
+                <!--<input class="res" type="reset" value="重置"/>-->
+                <!--</div>-->
+                <!--<div class="line"></div>-->
+            </form>
+            <div class="save">保存</div>
+            <div class="back">返回</div>
+        </div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+
+        <p id="p3">确 定</p>
+    </div>
+</div>
+</body>
+</html>

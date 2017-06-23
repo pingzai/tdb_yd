@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+html, body, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, label, button, textarea, p, blockquote, em {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style-type: none;
+    font-size: 16px;
+    color: #646464;
+    font-family: "华文细黑", "Arial";
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    width: 200px;
+    height: 50px;
+    float: right;
+    margin-top: -16%;
+    border : none;
+    vertical-align: middle;
+}
+
+input {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    border: none;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+em {
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.none {
+    display: none;
+}
+
+.block {
+    display: inline-block;
+}
+
+/*滑动解锁*/
+.slide {
+    text-align: center;
+    margin: 50px 0;
+    font: normal 14px/24px 'MicroSoft YaHei';
+}
+
+/*--登录界面--*/
+.loginBox {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    display: inline-block;
+    width: 600px;
+    height: 450px;
+    margin-top: -275px;
+    margin-left: -300px;
+}
+
+.loginBox h1 {
+    color: #6f7093;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 80px;
++
+}
+
+.loginCon p {
+    margin-bottom: 30px;
+    vertical-align: middle;
+}
+
+.loginCon p input {
+    border-radius: 16px;
+    width: 100%;
+    height: 60px;
+    font-size: 18px;
+    line-height: 60px;
+    padding-left: 20px;
+    border: 1px solid #6f7093;
+}
+
+p.code input {
+    width: 335px;
+    margin-right: 30px;
+}
+
+p.code span {
+    display: inline-block;
+    float: right;
+    height: 60px;
+    width: 230px;
+    /*background: #CACACA;*/
+}
+
+p input[type='button'] {
+    padding: 0;
+    cursor: pointer;
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    background: #6f7093;
+    border: none;
+}

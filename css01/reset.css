@@ -1,0 +1,132 @@
+﻿html,body,div,span,
+applet,object,iframe,
+h1,h2,h3,h4,h5,h6,p,blockquote,pre,
+a,abbr,acronym,address,big,cite,code,
+del,dfn,em,font,img,ins,kbd,q,s,samp,
+small,strike,strong,sub,sup,tt,var,
+dd,dl,dt,li,ol,ul,
+fieldset,form,label,legend,
+table,caption,tbody,tfoot,thead,tr,th,td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	/*font-family: "华文细黑", "Arial";*/
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+ol,ul {
+	list-style: none;
+}
+q:before,q:after,
+blockquote:before,blockquote:after {
+	content: "";
+}
+img{
+	object-fit: contain !important;
+}
+select{
+	appearance:none !important;
+	-moz-appearance:none; /* Firefox */
+	-webkit-appearance:none; /* Safari 和 Chrome */
+}
+/*弹窗*/
+.mini {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+	display: none;
+}
+
+.miniMsg {
+	width: 260px;
+	/*height: 120px;*/
+	border-radius: 8px;
+	position: absolute;
+	margin-top: 18%;
+	margin-left:45%;
+	background-color: #FFF;
+}
+
+#p1 {
+	text-align: center;
+	color: #0066FF;
+	margin-top: 5%;
+	font-size: 16px;
+}
+#p2 {
+	text-align: center;
+	color: #333;
+	margin-top: 13%;
+	font-size: 15px;
+	line-height: 30px;
+}
+#p3 {
+	border-top: 1px solid #E6E6E6;
+	text-align: center;
+	color: #0066FF;
+	margin-top: 15%;
+	font-size: 16px;
+	height: 35px;
+	margin-bottom:6px ;
+	line-height: 38px;
+	cursor: pointer;
+}
+.tcdPageCode {
+	padding: 15px 20px;
+	text-align: left;
+	color: #ccc;
+	float: right;
+	position: absolute;
+	margin-top: 2%;
+	margin-left: 43%;
+}
+
+.tcdPageCode a {
+	display: inline-block;
+	color: #546271;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	border: 1px solid #ddd;
+	margin: 0 2px;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+
+.tcdPageCode a:hover {
+	text-decoration: none;
+	border: 1px solid #428bca;
+}
+
+.tcdPageCode span.current {
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #fff;
+	background-color: #4a5166;
+	border: 1px solid #4a5166;
+	border-radius: 4px;
+	vertical-align: middle;
+}
+
+.tcdPageCode span.disabled {
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+	padding: 0 10px;
+	margin: 0 2px;
+	color: #bfbfbf;
+	background: #f2f2f2;
+	border: 1px solid #bfbfbf;
+	border-radius: 4px;
+	vertical-align: middle;
+}

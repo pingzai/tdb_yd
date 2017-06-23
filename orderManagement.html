@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/orderManagement.css" rel="stylesheet" type="text/css"/>
+    <link href="css01/foundation-datepicker.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/foundation-datepicker.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/foundation-datepicker.zh-CN.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/page.js"></script>
+    <script type="text/javascript" src="scripts/orderManagement.js"></script>
+</head>
+<body>
+<div class="mb"></div>
+<div class="container">
+    <div class="top">
+        <div class='titleBox'>
+            <h3>订单管理</h3>
+            <p>Order management</p>
+        </div>
+        <div class="search">
+            <div class="partOne">
+                <input type="text" id="orderNum" placeholder="请输入订单号"/><input class="find" id="find" type="button" value="search"/>
+            </div>
+            <div class="partTwo">
+                <div class="condition"><img src="images/select.png"><span class="qw">条件筛选</span></div>
+            </div>
+            <div class="partThree">
+                <ul>
+                    <li>
+                        <div><p>卖家</p>
+                            <select id="seller">
+                            </select>
+                            <img src="images/select.png">
+                        </div>
+                        <div><p>订单状态</p>
+                            <select id="orderState">
+                                <option value="0"></option>
+                                <option value="1">待付款</option>
+                                <option value="2">待发货</option>
+                                <option value="3">待收货</option>
+                                <option value="4">已完成</option>
+                                <option value="5">退款中</option>
+                                <option value="6">退款完成</option>
+                                <option value="7">退款失败</option>
+                                <option value="8">自提</option>
+                            </select>
+                            <img src="images/select.png">
+                        </div>
+                    </li>
+                    <li>
+                        <div><p>起始时间</p><input type="text" id="beginTime"></div>
+                        <div><p>截止时间</p><input type="text" id="endTime"></div>
+                    </li>
+                    <li>
+                        <div><p>客户姓名</p><input type="text" id="name"></div>
+                        <!--<div><p>客户电话</p><input type="text" id="userphone"></div>-->
+                    </li>
+                </ul>
+                <p class="searchBtn" id="searchBtn">搜索</p>
+            </div>
+            <div class="partFour">
+                <div class="up"><img src="images/top_arr.png"><span class="qwe">收起</span></div>
+            </div>
+        </div>
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <table id="newTable" style="display: none">
+       <thead>
+         <th>订单号</th>
+         <th>商品名称</th>
+         <th>数量</th>
+         <th>单价</th>
+         <th>买家</th>
+         <th>卖家</th>
+         <!--<th>实收</th>-->
+         <th>订单状态</th>
+       </thead>
+        <tbody id="newTbody">
+
+        </tbody>
+    </table>
+    <div class="content" id="content">
+        <div class="classification">
+            <div class="all"><input type="checkbox" onclick="checkAll(this);"/><span class="export">导出订单信息</span></div>
+            <div class="name">名称</div>
+            <div class="num">数量</div>
+            <div class="singel">单价</div>
+            <div class="shop">买家</div>
+            <div class="seller">卖家</div>
+            <div class="end">实收</div>
+            <div>
+                <select onchange="listChange()" id="listChange">
+                    <option value="0">订单状态</option>
+                    <option value="1">待付款</option>
+                    <option value="2">待发货</option>
+                    <option value="3">待收货</option>
+                    <option value="4">已完成</option>
+                    <option value="5">退款中</option>
+                    <option value="6">退款完成</option>
+                    <option value="7">退款失败</option>
+                    <option value="8">自提</option>
+                </select>
+            </div>
+        </div>
+        <div class="list">
+            <ul id="list">
+                <!--<li>-->
+                    <!--<div class="part">-->
+                        <!--<div class="partTitle">-->
+                            <!--<p class="partA"><input type="checkbox"/>订单号：<span>1235467890</span></p>-->
+                            <!--<p class="partB">订单创建时间:<span>2016.12.05  17：30</span></p>-->
+                        <!--</div>-->
+                        <!--<div class="partContent">-->
+                            <!--<div class="img"><img src="images/aa.png"></div>-->
+                            <!--<div style="width: 250px;margin-left: 35px">商品名称</div>-->
+                            <!--<div style="width: 45px;">1</div>-->
+                            <!--<div style="width: 100px;margin-left: 16px">66.00</div>-->
+                            <!--<div style="width: 170px;">15844451215</div>-->
+                            <!--<div style="width: 250px;margin-left: 11px">棒槌</div>-->
+                            <!--<div style="width: 40px">66.00</div>-->
+                            <!--<div style="width: 100px;margin-left: 42px">待发货</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+        <div class="tcdPageCode"></div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

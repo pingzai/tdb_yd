@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>铁路商城系统后台管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/login.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/login.js"></script>
+</head>
+<body>
+<div class="loginBox">
+    <h1>铁路商城系统后台管理</h1>
+
+    <div class="loginCon">
+        <p><input type="text" placeholder='请输入用户名' id='userName'/></p>
+
+        <p><input type="password" placeholder='请输入密码' id='userPwd'/></p>
+
+        <p class="code"><input type="text" placeholder='请输入验证码' id='userCode'/></p>
+            <span><a href="javascript:void(0)" onclick="createCode()">
+                <img name="code" id="src"/></a>
+            </span>
+        <p><input type="button" value='登       录' id='userSubmit'/></p>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+
+        <p id="p3">确 定</p>
+    </div>
+</div>
+</body>
+</html>

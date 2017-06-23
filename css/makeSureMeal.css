@@ -1,0 +1,356 @@
+body{
+    background-color: #f3f3f3;
+}
+input{
+    border: none;
+}
+.makeTrueMeal-min{
+    width: 100%;
+    height: 0.6rem;
+    position: relative;
+    margin-top: 0.1rem;
+    background-color: #fff;
+    margin-bottom: 0.1rem;
+    cursor: pointer;
+}
+.top{
+    font-size: 0.14rem;
+    height: 0.2rem;
+    line-height: 0.2rem;
+    padding-left: 0.1rem;
+}
+.make{
+    margin-bottom: 0.1rem;
+}
+.makeTrueMeal-min>p{
+    width: 80%;
+    display: block;
+    font-size: 0.14rem;
+    margin-left: 0.17rem;
+    height: 0.28rem;
+    line-height:0.4rem;
+    color: #9a9a9a;
+}
+.makeTrueMeal-min>p#mealAddress{
+    font-size: 0.12rem;
+}
+i{
+    font-style: normal;
+    color: #000;
+    font-weight: bold;
+}
+.makeTrueMeal-min>p>#userAddress{
+    color: #000;
+}
+#userPhone{
+    margin-left: 0.2rem;
+}
+#orderNum{
+    font-size: 0.16rem;
+    color: #fff;
+}
+#orderSum{
+    font-size: 0.16rem;
+    color: #fff;
+    float: right;
+}
+.makeTrueMeal-min>span{
+    position: absolute;
+    display: block;
+    width: 0.1rem;
+    height: 0.2rem;
+    right: 0.16rem;
+    top: 0.22rem;
+    background: url(../img/jt.png) no-repeat;
+    background-size: 100%;
+}
+.makeTrueMeal-u{
+    width: 100%;
+    margin: 0.05rem auto;
+    border-bottom: 1px solid #e0e0e0;
+    border-radius: 5px;
+}
+.makeTrueMeal-u>li{
+    width: 100%;
+    height: 0.6rem;
+    margin-bottom: 0.05rem;
+    position: relative;
+    background-color: #fff;
+}
+.makeTrueMeal-u>li>div{
+    float: left;
+    height: 0.6rem;
+    line-height: 0.6rem;
+    font-size: 0.14rem;
+}
+.makeTrueMeal-u>li>div.box1{
+    width: 63%;
+    padding-left: 0.15rem;
+}
+.makeTrueMeal-u>li>div.box2{
+    width: 12%;
+    text-align: center;
+    color: #9a9a9a;
+}
+del{
+    position: absolute;
+    font-size: 0.12rem;
+    top:0.72rem;
+    right:0.75rem;
+    color: #9f9f9f;
+}
+.advice{
+    width: 95%;
+    height: 0.43rem;
+    font-size: 0.15rem;
+    line-height: 0.43rem;
+    padding-left: 5%;
+    border-top: 1px solid #999;
+    border-bottom: 1px solid #999;
+    margin-top: 0.1rem;
+}
+.makeTrueMeal-footer{
+    width: 100%;
+    height: 0.41rem;
+    background-color: #797979;
+    position: fixed;bottom:0;
+    left:0;
+    color: #fff;
+}
+.makeTrueMeal-footer>span{
+    display: block;
+    height: 100%;
+    text-align: center;
+    line-height: 0.41rem;
+    float: left;
+    font-size: 0.11rem;
+}
+.makeTrueMeal-footer>span.span1{
+    width: 30%;
+}
+.makeTrueMeal-footer>span.span2{
+    width: 42%;
+    font-size: 0.16rem;
+}
+.makeTrueMeal-footer>span>i{
+    color: #fff;
+    font-size: 0.11rem;
+}
+.makeTrueMeal-footer>span>span{
+    font-size: 0.16rem;
+    margin-left: 0.3rem;
+}
+.makeTrueMeal-footer>span.span3{
+    float: right;
+    width: 26%;
+    font-size: 0.14rem;
+    cursor: pointer;
+    background-color: #ff4f4f;
+}
+.chooseWay{
+    width: 100%;
+}
+.chooseWay>li{
+    width: 100%;
+    height: 0.35rem;
+    margin: 0 auto;
+    font-size: 0.14rem;
+    border-bottom: 1px solid #f3f3f3;
+    background-color: #fff;
+    position: relative;
+}
+.chooseWay>li>.sp01{
+    display: block;
+    width: 0.15rem;
+    height: 0.15rem;
+    position: absolute;
+    top:0.1rem;
+    left:0.15rem;
+    background: url("../img/xin.png") no-repeat;
+    background-size: 100%;
+}
+.chooseWay>li.sum>span{
+    display: inline-block;
+    height: 100%;
+    line-height: 0.35rem;
+}
+.chooseWay>li.note{
+    margin-top: 0.05rem;
+}
+.chooseWay>li.sum>span:nth-child(1){
+    width: 71%;
+    padding-left: 0.19rem;
+}
+.chooseWay>li>div{
+    display: inline-block;
+    height: 0.35rem;
+    line-height: 0.35rem;
+}
+.chooseWay>li.newUser>div{
+    width: 66%;
+    padding-left: 0.35rem;
+    font-size: 0.13rem;
+}.chooseWay>li.redPacket{
+    cursor: pointer;
+    height: inherit;
+ }
+.chooseWay>li>div.d1{
+    width: 0.6rem;
+    margin-left: 0.18rem;
+}
+.chooseWay>li>div.d2{
+    width: 0.8rem;
+    text-align: right;
+    margin-left: 1.7rem;
+}
+.chooseWay>li:nth-child(2)>div.d2{
+    color: #9a9a9a;
+}
+.chooseWay>li>img{
+    position: absolute;
+    top:0.1rem;
+    width: 0.1rem;
+    right:0.1rem;
+}
+.chooseWay>li>input{
+    width: 2.4rem;
+    height: 0.35rem;
+    border: none;
+}
+.chooseWay>li>i{
+    width: 0.3rem;
+    top:0.07rem;
+    right:0.36rem;
+    color: #9a9a9a;
+    font-weight: normal;
+    font-size: 0.12rem;
+    position: absolute;
+}
+.chooseWay>li>ul.secondChoose{
+    display: none;
+}
+.chooseWay>li>ul>li{
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: center;
+    background-color: #f3f3f3;
+    border-bottom: 1px solid #ccc;
+    color: #777;
+}
+.chooseWay>li>ul>li:last-child{
+    border-bottom: none;
+}
+.goodsClass>.top{
+    width: 96%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.13rem;
+    margin: 0 auto;
+    color: #999;
+    border-bottom: 1px solid #e3e3e3;
+}
+.againMeal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 999;
+    font-size: 0.13rem;
+}
+.againMeal>div{
+    width: 76%;
+    margin: 1rem auto;
+    background-color: #fff;
+    overflow: hidden;
+}
+.againMeal>div>div.borderB{
+    width: 93%;
+    margin-left: 0.1rem;
+    padding-left: 0;
+    border-bottom: 1px solid #b3b2b3;
+}
+.againMeal>div>div{
+    margin: 0 auto;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    padding-left: 0.1rem;
+}
+.againMeal>div>div.again01{
+    color:#646464;
+    background-color: #ddd;
+}
+.borderB>span{
+    display: inline-block;
+    width: 0.8rem;
+}
+.borderB>select{
+    color: #b3b3b3;
+    width: 55%;
+}
+.againMeal>div>div.readMe{
+    position: relative;
+}
+.againMeal>div>div.btn{
+    text-align: center;
+    width: 90%;
+    background-color: #ff4f4f;
+    margin-bottom: 0.1rem;
+    color: #fff;
+    cursor: pointer;
+}
+.againMeal>div>div.readMe>input{
+    position: absolute;
+    top:0.08rem;
+    left:0.2rem;
+}
+.againMeal>div>div.readMe>span:nth-child(2){
+    padding-left: 0.3rem;
+    font-size: 0.11rem;
+}
+.againMeal>div>div.readMe>span:nth-child(2)>i{
+    font-style: normal;
+    color: #5995fa;
+}
+form{
+    display: inline-block;
+}
+input[type=checkbox],input[type=radio]{
+    -webkit-appearance: none;
+    width: 0.14rem;
+    height: 0.14rem;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type=checkbox]:active,input[type=radio]:active {
+    border-color: #ff4f4f;
+}
+input[type=checkbox]:checked,input[type=radio]:checked {
+    background: #fff;
+}
+input[type=checkbox]:checked::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url("../img/gou.png") no-repeat;
+    background-size: 100%;
+    width:0.15rem;
+    height: 0.15rem;
+    top:-0.01rem;
+    left:-0.01rem;
+}
+input[type=checkbox]:focus {
+    outline: none;
+}

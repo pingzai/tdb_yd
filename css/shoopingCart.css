@@ -1,0 +1,316 @@
+body{
+    background-color: #f4f4f4;
+}
+.shoopingCart>.content{
+    margin-bottom: 1.03rem;
+    /*display: none;*/
+}
+.shoopingCart .cart-nav{
+	padding-top:0.05rem;
+    width: 100%;
+    height: 0.285rem;
+}
+.shoopingCart .cart-nav>label{
+    font-size: 0.134rem;
+    display: block;
+    float: left;
+    width:0.5rem;
+    height:0.285rem;
+    /*margin-top: 0.048rem;*/
+    margin-left: 0.01rem;
+}
+.shoopingCart label>input{
+    display: block;
+    float: left;
+    margin-left: 0.13rem;
+    margin-top: 0.08rem;
+}
+.shoopingCart .cart-nav>p{
+    display: block;
+    float: left;
+    font-size: 0.133rem;
+    height: 0.285rem;
+    line-height: 0.285rem;
+    margin-left: 0.1rem;
+}
+.shoopingCart .cart-content>ul{
+    width: 100%;
+    background-color: #fff;
+}
+.shoopingCart .cart-content>ul>li{
+    width: 96%;
+    margin: 0 auto;
+    border-bottom: 1px solid #eaeaea;
+    height:1.27rem;
+    overflow: hidden;
+    background-color:#f4f4f4;
+}
+.shoopingCart .cart-content>ul>li>label{
+    display: block;
+    float: left;
+    width:0.44rem;
+    height:0.9rem;
+}
+.label3 input{
+	margin: 0.38rem 0.15rem 0.38rem 0.07rem!important;
+}
+.shoopingCart .cart-content>ul>li>.l{
+    background-size: contain;
+    width: 0.78rem;
+    height: 0.78rem;
+    float: left;
+    margin-top: 0.095rem;
+    cursor: pointer;
+}
+.shoopingCart .cart-content>ul>li>.r{
+    float: right;
+    font-size: 0.14rem;
+    height: 0.9rem;
+    width: 2.1rem;
+    position: relative;
+}
+.shoopingCart .cart-content>ul>li>.r>p{
+    margin-top: 0.157rem;
+    max-height: 0.36rem;
+    overflow: hidden;
+    padding-left: 0.05rem;
+}
+.shoopingCart .cart-content>ul>li>.r>p.stock{
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    font-size: 0.12rem;
+    color: #ff4f4f;
+    display: none;
+}
+.shoopingCart .cart-content>ul>li del{
+    position: absolute;
+    top:0.62rem;
+    left:0.6rem;
+    font-size: 0.12rem;
+    color: #969696;
+}
+.shoopingCart .cart-content>ul>li>.r>.classify1{
+    width: 95%;
+    color: #ababab;
+    margin: 0.02rem auto;
+    font-size: 0.11rem;
+    position: relative;
+    margin-bottom: 0.114rem;
+}
+.shoopingCart ul>li>.r>.classify1>span{
+
+}
+.shoopingCart >ul>li>.r>.money{
+    display: inline-block;
+    margin-top: 0.21rem;
+    font-weight: bold;
+}
+.shoopingCart ul>li>.s3{
+	margin-left:2.1rem;
+   	display: block;
+   	float:left;
+   	width:1.22rem;
+    height: 0.27rem;
+    font-size:0.14rem;
+    color: #969696;
+    /*background-color:#f5f5f5;*/
+}
+.shoopingCart ul>li>.s3>span{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 0.3rem;
+    height: 0.266rem;
+    font-size:0.2rem;
+    line-height: 0.266rem;
+    /*border: 1px solid #989898;*/
+    cursor: pointer;
+    background-color:#dfdfdf;
+}
+.shoopingCart ul>li>.s3>.span1{
+	border-top-left-radius:0.02rem;
+    border-bottom-left-radius:0.02rem;
+    -webkit-border-top-left-radius:0.02rem;
+    -webkit-border-bottom-left-radius:0.02rem;
+}
+.r .p1{
+	font-size:0.13rem;
+	line-height: 0.15rem;
+}
+.shoopingCart ul>li>.s3>.span2{
+	margin:0 0.01rem;
+    width: 0.6rem;
+    height: 100%;
+    display: block;
+    float: left;
+    /*border: 1px solid #969696;*/
+}
+.shoopingCart ul>li>.s3>.span2>input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border: none;
+    background-color:#dfdfdf;
+}
+.shoopingCart ul>li>.s3>.span3{
+    border-top-right-radius: 0.02rem;
+	border-bottom-right-radius: 0.02rem;
+	-webkit-border-top-right-radius: 0.02rem;
+	-webkit-border-bottom-right-radius: 0.02rem;
+}
+.shoopingCart>.addMoney{
+    width: 100%;
+    /*display: none;*/
+    height: 0.43rem;
+    background-color: rgba(153,153,153,.75);
+    position: fixed;
+    left: 0;
+    bottom: 0.45rem;
+    color: #fff;
+}
+.shoopingCart>.addMoney>label{
+    font-size: 0.16rem;
+    display: block;
+    height:100%;
+    float: left;
+    /*margin-top: 0.115rem;*/
+    /*color: #c6c6c6;*/
+    line-height: 0.43rem;
+}
+.shoopingCart>.addMoney>label>input{
+    display: block;
+    float: left;
+    margin-left: 0.14rem;
+    margin-right: 0.1rem;
+    margin-top:0.145rem;
+}
+.shoopingCart>.addMoney>.result{
+    width: 0.82rem;
+    height: 100%;
+    line-height: 0.43rem;
+    text-align: center;
+    font-size: 0.16rem;
+    float: right;
+    background-color: #ff4f4f;
+    cursor: pointer;
+}
+.shoopingCart>.addMoney>.add{
+    width: 1.4rem;
+    height: 100%;
+    line-height: 0.43rem;
+    float: right;
+    font-size:0.14rem;
+}
+.shoopingCart>.addMoney>.add>span{
+    display: block;
+    height: 100%;
+    float: left;
+}
+.shoopingCart>.addMoney>.add>span.sp1{
+   width: 30%;
+   line-height: 0.453rem;
+    /*color: #c6c6c6;*/
+}
+.shoopingCart>.addMoney>.add>span.sp2{
+    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 0.16rem;
+}
+.shoopingCart>.addMoney>span{
+    display: block;
+    float: left;
+    cursor: pointer;
+    right:0.095rem;
+    font-size: 0.152rem;
+    line-height: 0.44rem;
+    color: #fff;
+    /*margin-top: 0.1rem;*/
+    margin-left: 0.2rem;
+    /*color: #c6c6c6;*/
+}
+.shoopingCart .cartNull{
+    position: fixed;
+    width: 100%;
+    top:1.6rem;
+    font-size: 0.14rem;
+    display: none;
+}
+.shoopingCart .cartNull .box01{
+    background: url("../img/shoopCart.png") no-repeat;
+    background-size: 100%;
+    width: 1.6rem;
+    height: 1.6rem;
+    margin: 0 auto;
+}
+.shoopingCart .cartNull .box02{
+    width: 1.6rem;
+    text-align: center;
+    height: 0.3rem;
+    font-size: 0.15rem;
+    margin: 0 auto;
+    color: #c8c8c8;
+}
+.shoopingCart .cartNull .box03{
+    width: 1rem;
+    text-align: center;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    font-size: 0.15rem;
+    margin: 0 auto;
+    color: #000;
+    background-color: #fff;
+    box-shadow: -5px 5px 10px #ccc;
+    cursor: pointer;
+}
+input[type=checkbox],input[type=radio]{
+    -webkit-appearance: none;
+    width: 0.14rem;
+    height: 0.14rem;
+    cursor: pointer;
+    vertical-align: bottom;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: relative;
+}
+
+input[type=checkbox]:active,input[type=radio]:active {
+    border-color: #ff4f4f;
+}
+input[type=checkbox]:checked,input[type=radio]:checked {
+    background: #fff;
+}
+input[type=checkbox]:checked::after {
+    content:"";
+    display: block;
+    position: absolute;
+    background: url("../img/gou.png") no-repeat;
+    background-size: 100%;
+    width:0.15rem;
+    height: 0.15rem;
+    top:-0.01rem;
+    left:-0.01rem;
+}
+
+input[type=checkbox]:focus {
+    outline: none;
+}
+.cart-content{
+    /*margin-bottom: 0.1rem;*/
+    background-color:#fff;
+}
+.goods-money{
+    position: absolute;
+    font-size: 0.16rem;
+    top: 0.6rem;
+    color: #ff4f4f;
+}

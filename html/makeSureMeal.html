@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单确认</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <link rel="stylesheet" href="../css/makeSureMeal.css"/>
+    <link rel="stylesheet" href="../css/alertBg.css">
+</head>
+<body>
+<div class="makeTrueMeal-min">
+    <p>
+        <i id="userName"></i>
+        <i id="userPhone"></i>
+    </p>
+    <p id="mealAddress"></p>
+    <span></span>
+</div>
+<div class="goodsClass">
+    <div class="make">
+        <ul class="makeTrueMeal-u">
+            <li>
+             <div class="box1">20元盒饭</div>
+             <div class="box2">x1</div>
+             <div class="box3">￥20.00</div>
+            </li>
+            <li>
+                <div class="box1">18元盒饭</div>
+                <div class="box2">x2</div>
+                <div class="box3">￥18.00</div>
+            </li>
+        </ul>
+        <ul class="chooseWay">
+            <li class="newUser">
+                <span class="sp01"></span>
+                <div>
+                    新用户立减(不与其他优惠同享)
+                </div>
+                <span class="sp02">-￥20.00</span>
+            </li>
+            <li class="redPacket">
+                <div class="d1">红包</div>
+                <div class="d2">请选择红包</div>
+                <img src="../img/jt.png" alt="" class="ss" data-down="0">
+                <ul class="secondChoose">
+                    <li>红包1</li>
+                    <li>红包2</li>
+                    <li>红包3</li>
+                    <li>红包4</li>
+                </ul>
+            </li>
+            <li class="sum">
+                <span>总计</span>
+                <span>￥ 45.00</span>
+            </li>
+            <li class="note">
+                <div class="d1">备注</div>
+                <input type="text">
+                <i>选填</i>
+            </li>
+        </ul>
+    </div>
+
+</div>
+<div class="makeTrueMeal-footer">
+    <span class="span1">已优惠:￥ 12.00</span>
+    <span class="span2">
+        <i>待支付:</i>
+        ￥ 45.00
+    </span>
+    <span class="span3">去付款</span>
+</div>
+<div class="againMeal">
+    <div class="againMin">
+            <div class="again01">填写乘车信息</div>
+            <div class="borderB">
+                <span>火车车次</span>
+                <span></span>
+            </div>
+            <div class="borderB">
+                <span>乘车日期</span>
+                <span></span>
+            </div>
+            <div class="borderB">
+                <span>取餐时间</span>
+                <select name="mealTime" id="mealTime">
+                    <option value="午餐" selected>午餐</option>
+                    <option value="晚餐">晚餐</option>
+                </select>
+            </div>
+            <div class="borderB">
+                <span>姓名</span>
+                <!--<form action="" onsubmit="return false">-->
+                    <input type="text" placeholder="请填写姓名" id="mealName">
+                <!--</form>-->
+            </div>
+            <div class="borderB">
+                <span>联系方式</span>
+                <form action="" onsubmit="return false">
+                <input type="number" placeholder="请填写联系方式" id="mealPhone">
+                </form>
+            </div>
+            <div class="readMe">
+                <input type="checkbox" class="check01" checked/>
+                <span>我已阅读 <i>《铁路订餐须知》</i> </span>
+            </div>
+            <div class="btn">
+                确定
+            </div>
+    </div>
+</div>
+<div class="alertBg">
+    <div class="prompt01">
+        <p></p>
+        <div class="btn" id="alertBtn01">确定</div>
+    </div>
+    <div class="prompt02">
+        <p></p>
+        <div id="alertBtn02">取消</div>
+        <div id="alertBtn03">确定</div>
+    </div>
+</div>
+</body>
+<script src="../js/rem.js"></script>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../script/makeSureMeal.js"></script>
+<script src="../script/alertBg.js"></script>
+</html>

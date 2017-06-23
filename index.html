@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>铁路商城系统后台管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/index.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+    <script type="text/javascript">
+        window.history.forward(2);
+    </script>
+</head>
+<body>
+<div class="homeBox clearfix">
+    <div class="homeNav">
+        <h2>铁路商城<span>后台管理工具</span></h2>
+
+        <div class="userMsg">
+            <p>Super</p>
+
+            <p>Administrator</p>
+        </div>
+        <!--<div class="admin_list">-->
+            <!--<ul>-->
+                <!--<li data-page="self" id="analysis">-->
+                    <!--<a>-->
+                        <!--<span id="A">待办事项</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li id="user">-->
+                    <!--<a>-->
+                        <!--<span id="B">订单管理</span>-->
+                    <!--</a>-->
+                <!--</li>-->
+                <!--<li data-page="activity" id="activity">-->
+                    <!--<a>-->
+                        <!--<span id="C">商品管理</span>-->
+                    <!--</a>-->
+                    <!--<ul id="ulB">-->
+                        <!--<li id="drugDictionary">-->
+                            <!--<a>-->
+                                <!--<span style="font-size: 14px">商品管理</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                        <!--<li id="InspectionDictionary">-->
+                            <!--<a>-->
+                                <!--<span style="font-size: 14px">仓库管理</span>-->
+                            <!--</a>-->
+                        <!--</li>-->
+                    <!--</ul>-->
+                <!--</li>-->
+            <!--</ul>-->
+        <!--</div>-->
+        <ul id="all">
+            <!--<li class="clickLi" id="btn1"><a href="javascript:void(0)">待办事项</a></li>-->
+            <li id="btn2"><a href="javascript:void(0)">订单管理</a></li>
+            <li id="btn3" state="0"><a href="javascript:void(0)">商品管理</a></li>
+            <ul id="partTwo">
+                <li class="old">已上架</li>
+                <li>仓库</li>
+            </ul>
+            <li id="btn4"><a href="javascript:void(0)">类目管理</a></li>
+            <li id="btn5"><a href="javascript:void(0)">区域管理</a></li>
+            <li id="btn6"><a href="javascript:void(0)">首页管理</a></li>
+            <li id="btn7"><a href="javascript:void(0)">卖家管理</a></li>
+            <li id="btn8" state="0"><a href="javascript:void(0)">营销管理</a></li>
+            <ul id="twoPart">
+                <li class="old">红包管理</li>
+                <li>活动管理</li>
+            </ul>
+            <li id="btn9"><a href="javascript:void(0)">分销统计</a></li>
+            <li id="btn10"><a href="javascript:void(0)">会员管理</a></li>
+            <li id="btn11"><a href="javascript:void(0)">管理员管理</a></li>
+        </ul>
+        <div class="signOut">
+            <a id="updatePwd">修改密码</a>
+        </div>
+        <div class="signOut" style="margin-top: 18px;">
+            <a id="exit">退出</a>
+        </div>
+        <!--<div class="chose">-->
+            <!--<p class="commodityManagement">商品管理</p>-->
+            <!--<p class="warehouseManagement">仓库管理</p>-->
+        <!--</div>-->
+    </div>
+    <div class="homeCon">
+        <iframe src="orderManagement.html" scrolling="no" frameborder="0" width="100%" height="766" id="main_iframe"></iframe>
+    </div>
+    <div class="maskBox" id="maskBox">
+    </div>
+</div>
+</body>
+</html>

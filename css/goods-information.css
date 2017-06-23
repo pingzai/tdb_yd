@@ -1,0 +1,440 @@
+.goods-information {
+    width: 100%;
+    cursor: default;
+    z-index: 999;
+    background-color: #fff;
+    margin-bottom: 0.428rem;
+}
+.goods-information div.bg01 {
+    width: 100%;
+}
+.goods-information div.bg1{
+    margin-bottom: 0.42rem;
+}
+.goods-information .bg img {
+    width: 100%;
+    /*height: 100%;*/
+}
+.bgmin>img{
+    width: 100%;
+}
+.goods-information .conter {
+    width: 94%;
+    max-height: 0.6rem;
+    line-height: 0.25rem;
+    font-size: 0.17rem;
+    margin: 0 auto;
+    font-weight: bold;
+    overflow: hidden;
+}
+.goods-information > span {
+    display: block;
+    float: left;
+}
+.goods-information > span.span1 {
+    font-size: 0.18rem;
+    color: #ff4f4f;
+    font-weight: bold;
+    margin-left: 0.1rem;
+    margin-top: 0.05rem;
+}
+
+.goods-information > span.span2 {
+    font-size: 0.13rem;
+    color: #999;
+    margin-top: 0.1rem;
+    margin-right: 0.1rem;
+    float: right;
+}
+.goods-information > span.span3 {
+    font-size: 0.13rem;
+    color: #999;
+    width: 1rem;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+.goods-information .promotion {
+    width: 100%;
+    overflow: auto;
+}
+.goods-information .postage{
+    width: 100%;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    text-align: right;
+    font-size: 0.12rem;
+    color: #ccc;
+}
+
+.goods-information .promotion > span {
+    font-size: 0.14rem;
+    display: block;
+    height: 0.3rem;
+    line-height: 0.3rem;
+    float: left;
+    color: #bbb;
+}
+.goods-information .promotion > span.s01 {
+    width: 0.7rem;
+    margin-top: 0.02rem;
+    text-align: center;
+}
+.goods-information .promotion > span.s02 {
+    margin-left: 0.2rem;
+    width: 2.4rem;
+    height: 0.3rem;
+    font-size: 0.14rem;
+    color: #000;
+    line-height: 0.2rem;
+    margin-top: 0.05rem;
+    overflow: hidden;
+}
+.goods-information .color {
+    cursor: pointer;
+    width: 95%;
+    height: 0.42rem;
+    border-bottom: 1px solid #efefef;
+    border-top: 1px solid #efefef;
+    margin: 0 auto;
+    margin-top: 0.4rem;
+}
+
+.goods-information .color > span {
+    display: block;
+    font-size: 0.14rem;
+}
+
+.goods-information .color > span.span1 {
+    float: left;
+    margin-left: 0.114rem;
+    margin-top: 0.105rem;
+    color: #9c9c9c;
+}
+.goods-information .color > span#span3 {
+    float: left;
+    margin-left: 0.4rem;
+    margin-top: 0.105rem;
+}
+.goods-information .color > span.span2 {
+    float: right;
+    display: block;
+    width: 0.1rem;
+    height: 0.2rem;
+    margin-right: 0.114rem;
+    margin-top: 0.14rem;
+    background: url("../img/jt.png") no-repeat;
+    background-size: 100% ;
+}
+
+.goods-information .goods-footer {
+    width: 100%;
+    height: 0.428rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.goods-information .goods-footer a {
+    display: block;
+    float: left;
+    width: 33.3%;
+    height: 0.428rem;
+    text-align: center;
+    line-height: 0.428rem;
+    font-size: 0.14rem;
+}
+
+.goods-information .goods-footer a.a1 {
+    background-color: #727272;
+    color: #fff;
+    font-size: 0.142rem;
+    position: relative;
+}
+.goods-information .goods-footer a.a1>span {
+   display: block;
+    width: 0.3rem;
+    height: 0.3rem;
+    position: absolute;
+    top:0.06rem;
+    left:0.06rem;
+    background: url("../img/shoucang01.png") no-repeat;
+    background-size: 100%;
+
+}
+.goods-information .goods-footer a.a2 {
+    background-color: #ec4389;
+    color: #fff;
+}
+
+.goods-information .goods-footer a.a3 {
+    background-color: #ff4f4f;
+    color: #fff;
+}
+
+.goods-information .color .color-classify {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+    display: none;
+    z-index:2;
+}
+
+.goods-information .color-classify .list {
+    width: 100%;
+    /*height: 2.6rem;*/
+    background-color: #fff;
+    position: absolute;
+    bottom: -2rem;
+    left: 0;
+}
+
+.goods-information .color-classify .list > .top {
+    width: 96%;
+    margin: 0.02rem auto;
+    font-size: 0.142rem;
+    height: 1.1rem;
+    border-bottom: 1px solid #efefef;
+    line-height: 0.342rem;
+}
+.goods-information .color-classify .list > .top>div{
+    float: left;
+}
+.goods-information .color-classify .list > .top>img.list-l{
+    display:inline-block;
+    width: 1.1rem;
+    height: 1.1rem;
+    margin-top: -0.1rem;
+    margin-left: 0.1rem;
+    background: url("") no-repeat;
+    background-size: 100%;
+    border: 1px solid #efefef;
+}
+.goods-information .color-classify .list > .top>div.list-r{
+    float: right;
+    width: 2rem;
+    height: 100%;
+    position: relative;
+}
+.goods-information .color-classify .list > .top>div.list-r>p{
+    display: block;
+    width: 96%;
+    line-height: 0.2rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    height: 0.4rem;
+    margin: 0.1rem auto;
+    font-weight: bold;
+}
+.goods-information .color-classify .list > .top>div.list-r>span{
+   position: absolute;
+    top:0.3rem;
+    font-size: 0.16rem;
+    color: #ff4f4f;
+}
+.goods-information .color-classify .list > ul {
+    width: 100%;
+    overflow: auto;
+}
+
+.goods-information .color-classify .list > ul > li {
+    height: 0.285rem;
+    float: left;
+    border: 1px solid #c7c7c7;
+    background-color: #c7c7c7;
+    padding:  0 0.1rem;
+    font-size: 0.1rem;
+    text-align: center;
+    line-height: 0.285rem;
+    margin: 0.03rem;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.goods-information .color-classify .list > ul > li.classify-active {
+    border: 1px solid #ff4f4f;
+    background-color: #ff4f4f;
+    color: #fff;
+}
+
+.goods-information .color-classify .list .bottom {
+    width: 95%;
+    height: 0.61rem;
+    margin: 0 auto;
+    border-top: 1px solid #efefef;
+    font-size: 0.123rem;
+}
+
+.goods-information .color-classify .list .bottom > .l01 {
+    float: right;
+    margin-top: 0.04rem;
+    font-size: 0.142rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff4f4f;
+    line-height: 0.3rem;
+    width: 0.7rem;
+    height: 0.3rem;
+    text-align: center;
+    /*display: none;*/
+}
+.goods-information .color-classify .list .bottom > .l02 {
+    float: right;
+    margin-top: 0.04rem;
+    font-size: 0.142rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff4f4f;
+    line-height: 0.3rem;
+    width: 0.7rem;
+    height: 0.3rem;
+    text-align: center;
+    display: none;
+}
+.goods-information .color-classify .list .bottom > .l03 {
+    float: right;
+    margin-top: 0.04rem;
+    font-size: 0.142rem;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff4f4f;
+    line-height: 0.3rem;
+    width: 0.7rem;
+    height: 0.3rem;
+    text-align: center;
+    display: none;
+}
+
+.goods-information .color-classify .list .top .r {
+    float: right;
+    height: 0.266rem;
+    margin-top: 0.095rem;
+    font-size: 0.123rem;
+}
+
+.goods-information .color-classify .list .top  .r > span {
+    display: block;
+    float: left;
+    text-align: center;
+    width: 0.27rem;
+    height: 0.266rem;
+    line-height: 0.266rem;
+    border: 1px solid #989898;
+    cursor: pointer;
+}
+
+.goods-information .color-classify .list .top  .r > .span2 {
+    display: block;
+    float: left;
+    height: 0.265rem;
+    width: 0.5rem;
+    border: 1px solid #989898;
+}
+.goods-information .color-classify .list .top  .r > .span2>input{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.goods-information .color-classify .list .top .r > .span1 {
+    border-right: none;
+}
+
+.goods-information .color-classify .list .top .r > .span3 {
+    border-left: none;
+}
+.ts {
+    width: 2.1rem;
+    height: 1.7rem;
+    line-height: 1rem;
+    font-size: 0.17rem;
+    position: fixed;
+    color: #fff;
+    top: 1.9rem;
+    text-align: center;
+    left: 0.74rem;
+    background-color: rgba(0, 0, 0, .8);
+    cursor: default;
+    display: none;
+}
+
+.ts > span{
+    position:absolute;
+    width: 0.95rem;
+    height: 0.33rem;
+    text-align: center;
+    line-height: 0.33rem;
+    top: 0.85rem;
+    left: 0.55rem;
+    font-size: 0.12rem;
+    border: 1px solid #fff;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+.goods-collection{
+    position: fixed;
+    top:0.2rem;
+    left:0.2rem;
+}
+#s02{
+    display: block;
+    float: left;
+    font-size: 0.13rem;
+    color: #999;
+    width: 0.8rem;
+    height: 0.2rem;
+    margin-top: 0.1rem;
+    text-align: center;
+}
+.goShoopCart{
+    width: 0.3rem;
+    height: 0.3rem;
+    position: fixed;
+    right:0;
+    bottom:1rem;
+    background:url("../img/goShoopCart.png") no-repeat;
+    background-size: 100%;
+    z-index: 1;
+    cursor: pointer;
+}
+.xiangqing{
+    width: 90%;
+    height: 0.1rem;
+    position: relative;
+    border-bottom: 1px solid #efefef;
+    margin: 0.2rem auto;
+    margin-top: 0;
+}
+.xiangqing>span{
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    color: #9a9a9a;
+    width: 1rem;
+    text-align: center;
+    top:0.03rem;
+    left:1.15rem;
+    font-size: 0.12rem;
+}
+#goodsN{
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+}
+#goodsN>input{
+    display: block;
+    width: 0.6rem;
+    height: 0.3rem;
+    border: 1px solid #ff4f4f;
+    border-radius: 5px;
+}

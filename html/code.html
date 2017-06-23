@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>铁道宝二维码</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport format-detection"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="../css/reset01.css"/>
+    <style>
+        #code{
+            width: 80%;
+            padding-top:1rem;
+            padding-bottom: 0.2rem;
+            margin-left: 0.35rem;
+        }
+        p{
+            text-align: center;
+            color: #ff4f4f;
+            font-size: 0.14rem;
+        }
+        .animation{
+            -webkit-animation:fadeInDownBig 1s .2s ease both;
+            -moz-animation:fadeInDownBig 1s .2s ease both;}
+        @-webkit-keyframes fadeInDownBig{
+            0%{opacity:0;
+                -webkit-transform:translateY(-2000px)}
+            100%{opacity:1;
+                -webkit-transform:translateY(0)}
+        }
+        @-moz-keyframes fadeInDownBig{
+            0%{opacity:0;
+                -moz-transform:translateY(-2000px)}
+            100%{opacity:1;
+                -moz-transform:translateY(0)}
+        }
+    </style>
+</head>
+<body>
+<img class="animation" id="code" src="../img/qrcode.jpg" alt="加载失败，请刷新！">
+<p>长按识别图中的二维码</p>
+</body>
+</html>
+<script src="../script/jquery-2.1.4.min.js"></script>
+<script src="../js/rem.js"></script>
+<script>
+    $(function(){
+//        var http='https://www.railwaybaby.com/';
+//        var code=location.href.split("?")[1].split('&')[1].split("=")[1];
+//        var empId=location.href.split("?")[1].split('&')[0].split("=")[1];
+    });
+</script>

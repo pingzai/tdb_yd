@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品管理</title>
+    <link href="css01/commodityMsg.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/jQuery/showImg.js"></script>
+    <script type="text/javascript" src="scripts/addCommodity.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="mb"></div>
+    <div class="top">
+        <div class='titleBox'>
+            <h3>商品管理</h3>
+
+            <p>Commodity management</p>
+        </div>
+        <!--<div class="search">-->
+        <!--<div class="partOne">-->
+        <!--<input type="text"/><input class="find" type="button" value="search"/>-->
+        <!--</div>-->
+        <!--<div class="partTwo">-->
+        <!--<div class="condition"><img src="images/down.png"><span class="qw">条件筛选</span></div>-->
+        <!--</div>-->
+        <!--<div class="partThree">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<div><p>卖家名称</p><input type="text"></div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div>-->
+        <!--<p>类目</p>-->
+        <!--<select>-->
+        <!--<option>鞋子</option>-->
+        <!--<option>裤子</option>-->
+        <!--<option>水果</option>-->
+        <!--</select>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div><p>商品名称</p><input type="text"></div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<p class="searchBtn">搜索</p>-->
+        <!--</div>-->
+        <!--<div class="partFour">-->
+        <!--<div class="up"><img src="images/top_arr.png"><span class="qwe">收起</span></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="content">
+        <div class="titlePart">
+            <ul>
+                <li>
+                    <p>商品名称</p><input type="text" id="name">
+                </li>
+                <li>
+                    <p>商品类目</p><input type="text" id="class" readonly>
+                </li>
+                <li id="liState">
+                    <p>状态</p>
+                    <!--<img src="images/select.png" class="selectDown">-->
+                    <select id="state" disabled>
+                        <option value="1">正常</option>
+                        <option value="2">挂起</option>
+                    </select>
+                </li>
+                <li>
+                    <p>卖家</p>
+
+                    <select id="seller">
+
+                    </select>
+                    <span class="own">
+                       <input type="checkbox" class="since" id="since" value="2" style="width: 10px;">自提
+                    </span>
+                </li>
+                <li>
+                    <p>所属区域</p><input type="text" id="makeupCo">
+                    <select name="makeupCoSe" id="typenum" onchange="changeF(this)" size="10" style="display:none;">
+                    </select>
+                </li>
+                <li>
+                    <p>上架销量</p><input type="text" id="sell">
+                </li>
+            </ul>
+            <p class="img" id="showImg">
+                <img id="file0">
+            </p>
+            <input type="file" id="fileOne" class="files" onchange='previewImage(this)'/>
+        </div>
+        <div class="addCommodity">
+            <div class="addBtn"><img src="images/add.png"></div>
+            <div class="list">
+                <table cellpadding="0" cellspacing="0">
+                    <tbody id="tbody">
+                    <tr>
+                        <td>分类</td>
+                        <td><input type="text" class="g_name"></td>
+                        <td>库存</td>
+                        <td><input type="text" class="s_counts"></td>
+                        <td>货号</td>
+                        <td><input type="text" class="s_number"></td>
+                        <td>单价</td>
+                        <td><input type="text" class="g_price"></td>
+                        <td>优惠价</td>
+                        <td><input type="text" class="g_rprice"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="foot">
+            <input type="file" id="fileOnes" name="file" onchange='previewImageOne(this)'/>
+            <input type="file" id="fileTwo" name="file" onchange='previewImageTwo(this)'/>
+            <input type="file" id="fileThree" name="file" onchange='previewImageThree(this)'/>
+            <input type="file" id="fileFour" name="file" onchange='previewImageFour(this)'/>
+            <input type="file" id="fileFive" name="file" onchange='previewImageFive(this)'/>
+
+            <p class="addImg" id="showImgOne">
+                <img id="file1" name="fileOnes">
+
+            <div class="delPic">X</div>
+            </p>
+            <p class="addImg" id="showImgTwo">
+                <img id="file2" name="fileTwo">
+
+            <div class="delPic">X</div>
+            </p>
+            <p class="addImg" id="showImgThree">
+                <img id="file3" name="fileThree">
+
+            <div class="delPic">X</div>
+            </p>
+            <p class="addImg" id="showImgFour">
+                <img id="file4" name="fileFour">
+
+            <div class="delPic">X</div>
+            </p>
+            <p class="addImg" id="showImgFive">
+                <img id="file5" name="fileFive">
+
+            <div class="delPic">X</div>
+            </p>
+        </div>
+        <div class="btn">
+            <span id="add">发布/保存</span> <span id="back">返回</span>
+        </div>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确 定</p>
+    </div>
+</div>
+<div class="allClass">
+    <span class="close">X</span>
+</div>
+</body>
+</html>

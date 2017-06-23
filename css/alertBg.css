@@ -1,0 +1,51 @@
+.alertBg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:0;
+    font-size: 0.13rem;
+    background-color: rgba(0, 0, 0, .75);
+    z-index: 9999;
+    display: none;
+}
+.alertBg>div {
+    width: 65%;
+    height: 1.6rem;
+    margin: 1rem auto;
+    position: relative;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    border-radius: 10px;
+    border-top: 1px solid #fff;
+}
+.alertBg>div>p {
+    margin-top: 0.5rem;
+}
+.alertBg>div>div.btn {
+    width: 100%;
+    height: 0.45rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    cursor: pointer;
+    line-height: 0.45rem;
+    color: #5995fa;
+    border-top: 1px solid #ccc;
+}
+.alertBg>div.prompt02>div {
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    border-top: 1px solid #ccc;
+    left:1.21rem;
+    cursor: pointer;
+    color: #5995fa;
+}
+.alertBg>div.prompt02>div#alertBtn02 {
+    border-right: 1px solid #ccc;
+    left:0;
+}

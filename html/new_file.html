@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<link rel="stylesheet" href="../css/swiper-3.3.1.min.css" />
+	<style type="text/css">
+		*{margin:0;padding:0;}
+		.swiper-container{
+			width:50px;
+			height:100px;
+			margin:0 auto;
+			margin-top:300px;
+		}
+		.swiper-slide{
+			background-color:red;
+			white-space:nowrap;
+			overflow: hidden;
+			text-overflow:ellipsis;
+		}
+	</style>
+	<body>
+	    <div class="swiper-container swiper-container5">
+		    <div class="swiper-wrapper">
+		        <div class="swiper-slide">观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空,度一切苦厄。</div>
+		        <div class="swiper-slide">观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空,度一切苦厄。</div>
+		        <div class="swiper-slide">观自在菩萨，行深般若波罗蜜多时，照见五蕴皆空,度一切苦厄。</div>
+		    </div>
+		</div>
+	</body>
+	<script src="../script/jquery-2.1.4.min.js"></script>
+	<script src="../js/swiper-3.3.1.jquery.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var swiper5 = new Swiper ('.swiper-container', {
+					    direction: 'vertical',
+					    loop: true,
+					    autoplay : 1000,
+						speed: 500
+					});    
+		})
+	</script>
+</html>

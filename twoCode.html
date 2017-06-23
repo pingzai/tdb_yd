@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>铁道宝二维码</title>
+    <meta content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,width=device-width"
+          name="viewport format-detection"/>
+    <meta name = "format-detection" content = "telephone=no">
+    <link rel="shortcut icon" type="image/x-icon" href="img/log01.jpg" media="screen" />
+    <link rel="stylesheet" href="css/reset01.css"/>
+    <style>
+        #code{
+            width: 80%;
+            padding-top:1rem;
+            padding-bottom: 0.2rem;
+            margin-left: 0.35rem;
+            display: none;
+        }
+        p{
+            text-align: center;
+            color: #ff4f4f;
+            font-size: 0.14rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<img id="code" src="img/qrcode.jpg" alt="加载失败，请刷新！">
+<p>长按识别图中的二维码</p>
+</body>
+</html>
+<script src="script/jquery-2.1.4.min.js"></script>
+<script src="js/rem.js"></script>
+<script>
+  
+    $(function(){
+        var http='https://www.railwaybaby.com/';
+//        location.href=location.href+"?emp_id=12&code=071u87QG0inazh2uoSQG0eITPG0u87QG&state=state1&from=singlemessage&isappinstalled=0"
+        codeEmp(location.href.split("?")[1].split('&'));
+        function codeEmp(str){
+            var codeArr=str;
+            var arr=[];
+            $(codeArr).each(function(a,el){
+                arr.push(codeArr[a].split('='))
+            });
+            $(arr).each(function(m,el){
+                if(arr[m][0]=="code"){
+                    code=arr[m][1];
+                }
+                if(arr[m][0]=="emp_id"){
+                    empId=arr[m][1];
+                }
+            });
+            window.localStorage.setItem('code', code);
+            window.localStorage.setItem('empId', empId);
+
+            $(document).ready(function() { 
+        function jump(count) { 
+            window.setTimeout(function(){ 
+                count--; 
+                if(count > 0) {
+                 jump(count);
+                  } else { 
+                    location.href="index01.html?emp_id="+empId+"&code="+code+"&state=state1&from=singlemessage&isappinstalled=0"; } }, 1000);
+                 } 
+                 jump(1); 
+             });
+            /*$.ajax({
+                url:http+"wxQueryFocus",
+                type:'post',
+                cache:false,
+                data:JSON.stringify({'code':code,'emp_id':empId}),
+                dataType:'json',
+                contentType:"application/json",
+                success:function(data){
+                    if(data.success==true){
+                        window.location.href="index01.html?emp_id="+empId+"&code="+code+"&state=state1&from=singlemessage&isappinstalled=0";
+                    }else{
+                        $('#code').show().siblings('p').show();
+                    }
+
+                },`
+                error:function(){
+
+                }
+            });*/
+        }
+
+    });
+</script>

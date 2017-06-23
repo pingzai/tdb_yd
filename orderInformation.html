@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>订单管理</title>
+    <link rel="stylesheet" href="css01/reset.css"/>
+    <link href="css01/orderInformation.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="scripts/jQuery/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="scripts/orderInformation.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="top">
+        <div class='titleBox'>
+            <h3>订单管理</h3>
+            <p>Order management</p>
+        </div>
+        <!--<div class="search">-->
+        <!--<div class="partOne">-->
+        <!--<input type="text"/><input class="find" type="button" value="search"/>-->
+        <!--</div>-->
+        <!--<div class="partTwo">-->
+        <!--<div class="condition"><img src="images/down.png"><span class="qw">条件筛选</span></div>-->
+        <!--</div>-->
+        <!--<div class="partThree">-->
+        <!--<ul>-->
+        <!--<li>-->
+        <!--<div><p>卖家</p><input type="text"></div>-->
+        <!--<div><p>订单状态</p>-->
+        <!--<select>-->
+        <!--<option>已完成</option>-->
+        <!--<option>待发货</option>-->
+        <!--<option>退款中</option>-->
+        <!--<option>退款完成</option>-->
+        <!--<option>待付款</option>-->
+        <!--<option>交易关闭</option>-->
+        <!--</select>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div><p>起始时间</p><input type="text"></div>-->
+        <!--<div><p>截止时间</p><input type="text"></div>-->
+        <!--</li>-->
+        <!--<li>-->
+        <!--<div><p>客户姓名</p><input type="text"></div>-->
+        <!--<div><p>客户电话</p><input type="text"></div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <!--<p class="searchBtn">搜索</p>-->
+        <!--</div>-->
+        <!--<div class="partFour">-->
+        <!--<div class="up"><img src="images/top_arr.png"><span class="qwe">收起</span></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <div class="userMsgBox">
+            <span id="single">管理员</span>
+            <span id="userName"></span>
+        </div>
+    </div>
+    <div class="content">
+          <div class="msgList">
+              <ul>
+                  <li>
+                      <p class="title">订单号<span id="num"></span></p>
+                      <p class="title">买家<span id="mai"></span></p>
+                  </li>
+                  <li>
+                      <p class="title">订单创建时间<span id="time"></span></p>
+                      <p class="title">卖家<span id="seller"></span></p>
+                  </li>
+              </ul>
+          </div>
+          <div class="orderList">
+                 <p class="listTitle">订 单 列 表</p>
+              <div class="orderContent">
+                  <span class="order1">商品编号</span><span class="order2">分类</span>
+                  <span class="order3">商品名称</span><span class="order4">数量</span><span class="order5">价格</span>
+                  <ul>
+                      <li id="li">
+                          <!--<div class="partContent">-->
+                              <!--<div class="img"><img src="images/aa.png"></div>-->
+                              <!--<div style="margin-left: 100px;">zz0000000001</div>-->
+                              <!--<div>商品名称1</div>-->
+                              <!--<div>分类1</div>-->
+                              <!--<div>X1</div>-->
+                              <!--<div>66.00</div>-->
+                          <!--</div>-->
+                      </li>
+                  </ul>
+              </div>
+          </div>
+        <div class="listMsg">
+            <ul>
+                <!--<li>-->
+                    <!--<p class="msg">优惠金额<span>5.00</span></p>-->
+                <!--</li>-->
+                <li>
+                    <p class="msg">实收<span id="money"></span><span class="discount"></span></p>
+                </li>
+                <li>
+                    <p class="msg">买家留言<span id="express"></span></p>
+                </li>
+                <li>
+                    <p class="msg">物流信息<span id="msg" style="width: 700px"></span></p>
+                </li>
+                <li>
+                    <p class="msg insert">物流单号<input type="text" id="number"/></p>
+                    <!--<p class="msg insert">物流公司<input type="text" id="company"/></p>-->
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="foot">
+        <span id="send">发货</span><span id="back">返回</span>
+    </div>
+</div>
+<div class="mini">
+    <div class="miniMsg">
+        <p id="p2"></p>
+        <p id="p3">确  定</p>
+    </div>
+</div>
+</body>
+</html>

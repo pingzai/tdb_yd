@@ -1,0 +1,51 @@
+html ,body{
+    background-color: #f3f3f3;
+}
+.append-address{
+    width: 100%;
+    height: 0.5rem;
+    text-align: center;
+    line-height: 0.5rem;
+    background-color: #ff4f4f;
+    position: fixed;
+    bottom: 0;
+    color: #fff;
+    font-size: 0.21rem;
+    cursor: pointer;
+}
+.replace-min{
+    width: 100%;
+    height: 3.2rem;
+    font-size: 0.144rem;
+    background-color: #fff;
+    margin-top: 0.1rem;
+    border-top: 1px solid #eaeaea;
+    position: relative;
+}
+.replace-min>p{
+    text-align: center;
+    color: #757575;
+    font-size: 0.13rem;
+    position: absolute;
+    bottom:-0.2rem;
+    left:1rem;
+}
+.replace-min>label{
+    display: block;
+    height:0.48rem;
+    line-height: 0.48rem;
+    border-bottom: 1px solid #eaeaea;
+    color:#757575 ;
+    padding-left: 0.2rem;
+}
+.replace-min>label.label{
+ padding-left: 0.25rem;
+}
+.replace-min>label>input{
+    display: block;
+    float: right;
+    width: 2.4rem;
+    height:99%;
+    font-size: 0.12rem;
+    border: none;
+}

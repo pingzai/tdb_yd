@@ -1,0 +1,165 @@
+body{
+    background-color: #f3f3f3;
+}
+.refund-min{
+    margin-top: 0.1rem;
+}
+.refund-min .order-t {
+    width: 90%;
+    height: 0.3rem;
+    margin: 0 auto;
+    position: relative;
+    border-bottom: 1px solid #989898;
+}
+
+.refund-min .order-t > span {
+    position: absolute;
+    font-size: 0.14rem;
+    top: 0.05rem;
+    color: #989898;
+}
+
+.refund-min .order-t > span.span1 {
+    color: #000;
+}
+
+.refund-min .order-t > span.span2 {
+    right:  0rem;
+    color: #ff4f4f;
+}
+
+.refund-min .order-m {
+    width: 100%;
+    margin-top: 0.1rem;
+}
+
+.refund-min .order-m > li {
+    width: 100%;
+    height: 0.52rem;
+}
+
+.refund-min .order-m > li > div.l {
+    width: 0.76rem;
+    height: 0.52rem;
+    float: left;
+}
+
+.refund-min .order-m > li img {
+    display: block;
+    float: left;
+    width: 0.476rem;
+    height: 0.476rem;
+    margin-left: 0.14rem;
+}
+
+.refund-min .order-m > li > div.r {
+    float: left;
+    width: 2.6rem;
+    height: 0.52rem;
+    font-size: 0.14rem;
+    position: relative;
+}
+
+.order-m > li > div > span {
+    position: absolute;
+}
+
+.order-m > li > div > .g1 {
+    top: 0;
+    left: 0;
+}
+
+.order-m > li > div > .g2 {
+    top: 0;
+    right: 0;
+}
+
+.order-m > li > div > .g3 {
+    top: 0.156rem;
+    left: 0;
+    font-size: 0.12rem;
+    color: #999;
+}
+
+.order-m > li > div > .g4 {
+    top: 0.156rem;
+    right: 0;
+    font-size: 0.12rem;
+    color: #999;
+}
+
+.order-m > li > div > .g5 {
+    top: 0.285rem;
+    right: 0;
+    font-size: 0.12rem;
+}
+
+.order-b {
+    width: 100%;
+    height: 0.3rem;
+    margin-top: 0.1rem;
+    border-top: 1px solid #989898;
+    border-bottom: 1px solid #989898;
+    font-size: 13px;
+    position: relative;
+}
+
+.order-b > span {
+    position: absolute;
+    display: block;
+    top:0.05rem;
+    font-size: 0.14rem;
+}
+
+.order-b > span.s1 {
+    right:1.2rem;
+    margin-right: 0.1rem;
+}
+.order-b > span>i{
+    font-style: normal;
+    color: #ff4f4f;
+    font-size: 0.15rem;
+}
+.order-b > span.s2 {
+    right:0.2rem;
+}
+.refund-min>div{
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-bottom: 0.05rem;
+}
+
+.refund-min>div>span{
+    display: block;
+    float: right;
+    width: 0.8rem;
+    height: 0.3rem;
+    margin-bottom: 0.05rem ;
+    text-align: center;
+    line-height: 0.3rem;
+    font-size: 0.13rem;
+    border: 1px solid #989898;
+    cursor: pointer;
+}
+.refund-min>div>span.span01{
+    margin-top:0.05rem;
+}
+.refund-min>div>span.span02{
+    margin-top:0.05rem;
+    margin-right:0.05rem;
+    margin-left:0.05rem;
+    border: 1px solid #ff4f4f;
+    color: #ff4f4f;
+}
+.refund-min>div>span.span03{
+    margin-top:0.05rem;
+    margin-right:0.05rem;
+    background-color: #ff4f4f;
+    color: #fff;
+    border-color: #ff4f4f;
+}
+#orderFormDeliver_findorder{
+    color: #ff4f4f;
+    border-color: #ff4f4f;
+}
